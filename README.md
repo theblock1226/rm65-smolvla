@@ -8,7 +8,7 @@ RM65 + SmolVLA 推理/评测 **代码与小资产**（GitHub 瘦身包）。
 
 | 角色 | 平台 | 名称 |
 |------|------|------|
-| 代码 + 配置 + 图表 | GitHub | **`theblock1226/rm65-smolvla`**（本仓） |
+| 代码 + 配置 + 图表 | GitHub | **`theblock1226/rm65-smolvla-code`**（本仓） |
 | 四任务策略权重 | HF Models | `FelishLeon/smolvla_rm65_stack_30ep_s1000` 等 |
 | 清洗数据集 | HF Datasets | `FelishLeon/rm65_stacking_blocks` / `rm65_usb_insert` / `rm65_cleanup_the_desk` / `rm65_place_to_slot` |
 | 离线评测大产物 | HF Datasets | `FelishLeon/rm65-smolvla-offline-eval` |
