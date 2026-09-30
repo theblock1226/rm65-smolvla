@@ -1,0 +1,28 @@
+[INFO] [1790755212.403619383] [full_command_recorder]: 夹爪状态种子 norm=1.00
+current c api version:  v1.1.5
+[INFO] [1790755212.505091996] [full_command_recorder]: 关节反馈：使用 RM SDK (192.168.73.18:8080)
+[INFO] [1790755212.548597160] [full_command_recorder]: 工具端 24V: code=0
+[INFO] [1790755213.060241346] [full_command_recorder]: Modbus RTU port=1 baud=115200: code=0
+[INFO] [1790755213.418958698] [full_command_recorder]: 夹爪 init_state(0x200)=1
+[INFO] [1790755213.537776869] [full_command_recorder]: 大寰夹爪 Modbus 已挂载（与关节反馈共用 SDK）
+[INFO] [1790755213.549942522] [full_command_recorder]: recorded joints (deg): [-155.43, -90.17, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755215.558466527] [full_command_recorder]: recorded joints (deg): [-155.43, -90.16, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755217.576969599] [full_command_recorder]: recorded joints (deg): [-155.43, -90.16, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755219.580422366] [full_command_recorder]: recorded joints (deg): [-155.43, -90.16, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755221.580536882] [full_command_recorder]: recorded joints (deg): [-155.43, -90.17, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755223.601238082] [full_command_recorder]: recorded joints (deg): [-155.43, -90.17, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755225.620110160] [full_command_recorder]: recorded joints (deg): [-155.43, -90.16, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755227.638669029] [full_command_recorder]: recorded joints (deg): [-155.43, -90.17, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755229.640013825] [full_command_recorder]: recorded joints (deg): [-155.43, -90.17, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755231.657839008] [full_command_recorder]: recorded joints (deg): [-155.43, -90.17, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755233.665385715] [full_command_recorder]: recorded joints (deg): [-155.43, -90.16, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755235.676097941] [full_command_recorder]: recorded joints (deg): [-155.43, -90.17, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755237.680505401] [full_command_recorder]: recorded joints (deg): [-155.43, -90.17, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755239.682211728] [full_command_recorder]: recorded joints (deg): [-155.43, -90.17, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755241.696283889] [full_command_recorder]: recorded joints (deg): [-155.43, -90.17, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755243.697856810] [full_command_recorder]: recorded joints (deg): [-155.43, -90.17, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755245.698180343] [full_command_recorder]: recorded joints (deg): [-155.43, -90.17, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755247.698397328] [full_command_recorder]: recorded joints (deg): [-155.43, -90.16, 51.01, 148.47, -122.6, -19.7]
+[INFO] [1790755249.700534320] [full_command_recorder]: recorded joints (deg): [-155.53, -90.17, 50.92, 148.5, -122.63, -19.67]
+[INFO] [1790755251.719567485] [full_command_recorder]: recorded joints (deg): [-157.19, -91.34, 52.02, 149.75, -121.76, -18.72]
+[INFO] [1790755253.722529344] [full_command_recorder]: recorded joints (deg): [-159.44, -93.45, 54.22, 151.97, -119.76, -17.07]

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>子任务切分预览</title>
+<style>
+:root { --bg:#111; --line:#333; --txt:#eee; --muted:#9aa; --play:#fff;
+  --grasp:#2bb673; --place:#5b8def; --align:#c46cff; --insert:#e6a23c; --tail:#6a6a6a; --failed:#e55; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: ui-sans-serif, system-ui, sans-serif; background:var(--bg); color:var(--txt); }
+header { padding:12px 16px; border-bottom:1px solid var(--line); }
+header h1 { margin:0 0 6px; font-size:18px; }
+header p { margin:4px 0 0; color:var(--muted); font-size:13px; }
+header a { color:#9cf; }
+.nav { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+.nav a { color:#cde; text-decoration:none; border:1px solid #555; padding:4px 10px; border-radius:999px; font-size:12px; }
+.nav a.on { background:#3d5afe; border-color:#3d5afe; color:#fff; }
+.layout { display:grid; grid-template-columns: 260px 1fr; min-height: calc(100vh - 110px); }
+.list { border-right:1px solid var(--line); overflow:auto; max-height: calc(100vh - 110px); }
+.item { padding:8px 12px; cursor:pointer; border-bottom:1px solid #222; }
+.item:hover { background:#222; }
+.item.on { background:#2a2a40; }
+.item .id { font-weight:700; }
+.item .meta { color:var(--muted); font-size:12px; }
+.main { padding:12px 16px 24px; }
+.videos { display:flex; gap:10px; flex-wrap:wrap; }
+video { width: min(480px, 48%); background:#000; border-radius:6px; }
+.row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin:10px 0; }
+button { background:#2b2b2b; color:var(--txt); border:1px solid #555; padding:6px 10px; border-radius:6px; cursor:pointer; }
+button:hover { background:#3a3a3a; }
+button.pri { background:#3d5afe; border-color:#3d5afe; }
+.legend span { display:inline-flex; align-items:center; gap:6px; margin-right:12px; font-size:12px; color:var(--muted); }
+.sw { width:12px; height:12px; border-radius:2px; display:inline-block; }
+.sw.grasp { background:var(--grasp); } .sw.place { background:var(--place); }
+.sw.align { background:var(--align); } .sw.insert { background:var(--insert); }
+.sw.tail { background:var(--tail); } .sw.failed { background:var(--failed); }
+.timeline { position:relative; height:36px; background:#222; border-radius:6px; overflow:hidden; margin:8px 0 4px; cursor:pointer; user-select:none; }
+.seg { position:absolute; top:0; bottom:0; opacity:0.92; }
+.seg.grasp { background:var(--grasp); } .seg.place { background:var(--place); }
+.seg.align { background:var(--align); } .seg.insert { background:var(--insert); }
+.seg.tail { background:var(--tail); } .seg.failed { background:var(--failed); }
+.playhead { position:absolute; top:0; bottom:0; width:2px; background:var(--play); z-index:3; }
+.chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+.chip { border:1px solid #555; border-radius:999px; padding:4px 10px; font-size:12px; cursor:pointer; background:#222; max-width:100%; }
+.chip.on { outline:2px solid #fff; }
+.chip.grasp { border-color:var(--grasp); } .chip.place { border-color:var(--place); }
+.chip.align { border-color:var(--align); } .chip.insert { border-color:var(--insert); }
+.chip.tail { border-color:var(--tail); } .chip.failed { border-color:var(--failed); }
+.time { font-variant-numeric: tabular-nums; color:var(--muted); font-size:13px; }
+.now { margin:8px 0; padding:8px 10px; background:#1c1c1c; border:1px solid #333; border-radius:6px; font-size:14px; }
+.now b { color:#fff; }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title">子任务切分预览</h1>
+  <p id="summary">加载中…</p>
+  <p>色块是当前这条里语言切换的位置。点时间轴或色块跳转；左右方向键换条。这是裁剪后的视频。</p>
+  <div class="nav" id="nav"></div>
+</header>
+<div class="layout">
+  <aside class="list" id="list"></aside>
+  <section class="main">
+    <div class="row">
+      <button id="prev">上一条</button>
+      <button id="next">下一条</button>
+      <span id="epLabel"></span>
+      <span class="time" id="clock">0.00 / 0.00</span>
+    </div>
+    <div class="videos" id="videos"></div>
+    <div class="now" id="now">当前语言：—</div>
+    <div class="legend">
+      <span><i class="sw grasp"></i>夹取接近（开爪）</span>
+      <span><i class="sw place"></i>放置并松开</span>
+      <span><i class="sw align"></i>抬升/对齐</span>
+      <span><i class="sw insert"></i>插入并松开</span>
+      <span><i class="sw tail"></i>松开后尾巴</span>
+      <span><i class="sw failed"></i>failed 不进 SFT</span>
+    </div>
+    <div class="timeline" id="timeline"></div>
+    <div class="chips" id="chips"></div>
+    <div class="row">
+      <button class="pri" id="playSeg">播放当前片段</button>
+      <button id="playAll">从头播放整条</button>
+    </div>
+  </section>
+</div>
+<script>
+const DATASETS = [
+  ["rm65_stacking_blocks", "堆叠"],
+  ["rm65_cleanup_the_desk", "收桌"],
+  ["rm65_place_to_slot", "对槽"],
+  ["rm65_usb_insert", "USB"],
+];
+const params = new URLSearchParams(location.search);
+const name = params.get("ds") || "rm65_stacking_blocks";
+const root = "/cleaned/" + name;
+let plan = null, keys = [], fps = 20, idx = 0, loop = null, videos = [], syncing = false, lastSeek = 0;
+
+document.getElementById("nav").innerHTML = DATASETS.map(([id, lab]) =>
+  `<a class="${id===name?"on":""}" href="/cleaned/subtask.html?ds=${id}">${lab}</a>`
+).join("");
+
+function tOf(frame) { return frame / fps; }
+function kindOf(w) { return w.kind || "grasp"; }
+
+function currentWindow(ep, t) {
+  const f = Math.min(ep.n_frames - 1, Math.max(0, Math.floor(t * fps)));
+  return (ep.windows||[]).find(w => f >= w.start && f < w.end) || (ep.windows||[]).slice(-1)[0];
+}
+
+function videoUrl(epIndex, key) {
+  const chunk = String(Math.floor(epIndex / 1000)).padStart(3, "0");
+  const ep = String(epIndex).padStart(6, "0");
+  return `${root}/videos/chunk-${chunk}/${key}/episode_${ep}.mp4`;
+}
+
+function renderList() {
+  const box = document.getElementById("list");
+  box.innerHTML = plan.episodes.map((ep,i) => {
+    const n = (ep.windows||[]).length;
+    const fail = ep.failed ? " · failed" : "";
+    return `<div class="item ${i===idx?"on":""}" data-i="${i}">
+      <div class="id">ep ${String(ep.episode_index).padStart(3,"0")}</div>
+      <div class="meta">${(ep.n_frames/fps).toFixed(1)}s · ${n} 段${fail}</div>
+    </div>`;
+  }).join("");
+  box.querySelectorAll(".item").forEach(el => el.onclick = () => load(Number(el.dataset.i)));
+}
+
+function load(i) {
+  idx = Math.max(0, Math.min(plan.episodes.length-1, i));
+  loop = null;
+  const ep = plan.episodes[idx];
+  document.getElementById("epLabel").textContent =
+    `ep ${String(ep.episode_index).padStart(3,"0")}  ${(ep.n_frames/fps).toFixed(1)}s`;
+  const vbox = document.getElementById("videos");
+  vbox.innerHTML = keys.map((k,ki) =>
+    `<div><div class="time">${k.replace("observation.images.","")}${ki? " · 跟左侧同步":" · 用此画面控制播放"}</div>
+     <video id="v${ki}" ${ki===0?"controls":"muted"} playsinline preload="auto" src="${videoUrl(ep.episode_index,k)}"></video></div>`
+  ).join("");
+  videos = keys.map((_,ki) => document.getElementById("v"+ki));
+  lastSeek = 0;
+  videos.forEach((v) => {
+    v.preload = "auto";
+    v.addEventListener("loadedmetadata", () => {
+      if (lastSeek > 0.04) {
+        try { v.currentTime = clampTime(v, lastSeek); } catch (e) {}
+      }
+    });
+  });
+  const master = videos[0];
+  if (master) {
+    master.addEventListener("timeupdate", onTime);
+    master.addEventListener("play", () => {
+      if (syncing) return;
+      videos.slice(1).forEach(v => {
+        if (lastSeek > 0.2 && (v.currentTime || 0) < 0.08) {
+          try { v.currentTime = clampTime(v, master.currentTime); } catch (e) {}
+        }
+        v.play().catch(()=>{});
+      });
+    });
+    master.addEventListener("pause", () => {
+      if (syncing) return;
+      videos.slice(1).forEach(v => v.pause());
+    });
+    master.addEventListener("seeked", () => {
+      if (syncing) return;
+      lastSeek = master.currentTime;
+      videos.slice(1).forEach(v => {
+        try { v.currentTime = clampTime(v, lastSeek); } catch (e) {}
+      });
+    });
+  }
+  drawTimeline(ep);
+  drawChips(ep);
+  renderList();
+  setNow(ep, 0);
+}
+
+function drawTimeline(ep) {
+  const tl = document.getElementById("timeline");
+  const n = ep.n_frames;
+  let html = "";
+  for (const w of ep.windows||[]) {
+    html += `<div class="seg ${kindOf(w)}" style="left:${100*w.start/n}%;width:${Math.max(0.35, 100*(w.end-w.start)/n)}%"></div>`;
+  }
+  html += `<div class="playhead" id="playhead" style="left:0"></div>`;
+  tl.innerHTML = html;
+  tl.onclick = (ev) => {
+    const r = tl.getBoundingClientRect();
+    const t = ((ev.clientX - r.left) / r.width) * (n / fps);
+    loop = null;
+    seekAll(t).then(() => playAll());
+  };
+}
+
+function drawChips(ep) {
+  const box = document.getElementById("chips");
+  const chips = (ep.windows||[]).map(w => ({
+    label: `${kindOf(w)} ${tOf(w.start).toFixed(1)}–${tOf(w.end).toFixed(1)}s  ${(w.task||"").replace(plan.overall+" ", "")}`,
+    start: w.start, end: w.end, cls: kindOf(w), reason: w.task || ""
+  }));
+  box.innerHTML = chips.map((c,i) =>
+    `<div class="chip ${c.cls}" data-i="${i}" title="${c.reason}">${c.label}</div>`
+  ).join("");
+  box.querySelectorAll(".chip").forEach(el => {
+    el.onclick = () => {
+      box.querySelectorAll(".chip").forEach(x => x.classList.remove("on"));
+      el.classList.add("on");
+      const c = chips[Number(el.dataset.i)];
+      playRange(c.start, c.end, true);
+    };
+  });
+}
+
+function setNow(ep, t) {
+  const w = currentWindow(ep, t);
+  document.getElementById("now").innerHTML = w
+    ? `当前语言：<b>${w.task || kindOf(w)}</b>`
+    : "当前语言：—";
+}
+
+function clampTime(v, t) {
+  const d = v.duration;
+  if (Number.isFinite(d) && d > 0.2) return Math.max(0, Math.min(t, d - 0.04));
+  return Math.max(0, t);
+}
+function whenReady(v) {
+  return new Promise((resolve) => {
+    const ok = () => v.readyState >= 1 && Number.isFinite(v.duration) && v.duration > 0.2;
+    if (ok()) return resolve();
+    const onMeta = () => { if (ok()) { v.removeEventListener("loadedmetadata", onMeta); v.removeEventListener("durationchange", onMeta); resolve(); } };
+    v.addEventListener("loadedmetadata", onMeta);
+    v.addEventListener("durationchange", onMeta);
+    setTimeout(resolve, 4000);
+  });
+}
+function seekOne(v, t) {
+  return new Promise((resolve) => {
+    if (!v) return resolve();
+    const target = clampTime(v, t);
+    let done = false;
+    const finish = () => { if (done) return; done = true; v.removeEventListener("seeked", finish); resolve(); };
+    v.addEventListener("seeked", finish);
+    try { v.currentTime = target; } catch (e) { finish(); return; }
+    if (Math.abs((v.currentTime || 0) - target) < 0.05 && v.readyState >= 2) finish();
+    setTimeout(finish, 900);
+  });
+}
+async function seekAll(t) {
+  if (!videos.length) return;
+  lastSeek = Math.max(0, t);
+  syncing = true;
+  videos.forEach(v => { try { v.pause(); } catch (e) {} });
+  await Promise.all(videos.map(whenReady));
+  for (let pass = 0; pass < 2; pass++) {
+    await Promise.all(videos.map(v => seekOne(v, lastSeek)));
+    const drifted = videos.some(v => lastSeek > 0.25 && Math.abs((v.currentTime || 0) - lastSeek) > 0.4);
+    if (!drifted) break;
+  }
+  syncing = false;
+}
+function playAll() {
+  syncing = true;
+  videos.forEach((v, i) => {
+    if (i > 0 && lastSeek > 0.2 && (v.currentTime || 0) < 0.08) {
+      try { v.currentTime = clampTime(v, lastSeek); } catch (e) {}
+    }
+  });
+  Promise.all(videos.map(v => v.play().catch(()=>{}))).finally(() => { syncing = false; });
+}
+function pauseAll() {
+  syncing = true;
+  videos.forEach(v => v.pause());
+  syncing = false;
+}
+async function playRange(start, end, autoplay) {
+  loop = {start: tOf(start), end: tOf(Math.max(start+1, end))};
+  await seekAll(loop.start);
+  if (autoplay !== false) playAll();
+}
+function onTime() {
+  if (syncing) return;
+  const v0 = videos[0]; if (!v0) return;
+  const t = v0.currentTime;
+  document.getElementById("clock").textContent = t.toFixed(2) + " / " + (v0.duration||0).toFixed(2);
+  const ep = plan.episodes[idx];
+  const ph = document.getElementById("playhead");
+  if (ph && ep) ph.style.left = (100 * t / (ep.n_frames/fps)) + "%";
+  if (ep) setNow(ep, t);
+  if (loop && t >= loop.end - 0.05) {
+    syncing = true;
+    videos.forEach(v => { try { v.currentTime = loop.start; } catch (e) {} });
+    setTimeout(() => { syncing = false; playAll(); }, 80);
+  }
+}
+
+document.getElementById("prev").onclick = () => load(idx-1);
+document.getElementById("next").onclick = () => load(idx+1);
+document.getElementById("playSeg").onclick = () => { if (loop) seekAll(loop.start).then(() => playAll()); };
+document.getElementById("playAll").onclick = () => { loop=null; seekAll(0).then(() => playAll()); };
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowLeft") load(idx-1);
+  if (e.key === "ArrowRight") load(idx+1);
+  if (e.key === " ") { e.preventDefault(); const v=videos[0]; if(!v) return; v.paused?playAll():pauseAll(); }
+});
+
+Promise.all([
+  fetch(root + "/meta/subtask_plan.json").then(r => r.json()),
+  fetch(root + "/meta/info.json").then(r => r.json()),
+]).then(([p, info]) => {
+  plan = p;
+  fps = p.fps || info.fps || 20;
+  keys = Object.keys(info.features || {}).filter(k => k.startsWith("observation.images."));
+  document.getElementById("title").textContent = "子任务切分：" + name;
+  document.getElementById("summary").textContent =
+    `${plan.overall}  ·  ${plan.episodes.length} 条  ·  ${plan.subtasks.length} 个子任务`;
+  load(0);
+}).catch((e) => {
+  document.getElementById("summary").textContent = "加载失败：" + e;
+});
+</script>
+</body>
+</html>

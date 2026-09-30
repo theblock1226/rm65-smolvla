@@ -1,0 +1,2213 @@
+{
+  "schema": "rm65/subtask_plan/v1",
+  "dataset": "rm65_stacking_blocks",
+  "overall": "Stack three cylinder blocks.",
+  "subtasks": [
+    "Grasp the left cylinder.",
+    "Place it on the middle cylinder and release.",
+    "Grasp the right cylinder.",
+    "Place it on the stack and release."
+  ],
+  "train_string": "{overall} {subtask}",
+  "fps": 20.0,
+  "episodes": [
+    {
+      "episode_index": 0,
+      "n_frames": 769,
+      "windows": [
+        {
+          "start": 0,
+          "end": 139,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 139,
+          "end": 331,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 331,
+          "end": 529,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 529,
+          "end": 734,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 734,
+          "end": 769,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 1,
+      "n_frames": 724,
+      "windows": [
+        {
+          "start": 0,
+          "end": 150,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 150,
+          "end": 301,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 301,
+          "end": 481,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 481,
+          "end": 667,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 667,
+          "end": 724,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 2,
+      "n_frames": 776,
+      "windows": [
+        {
+          "start": 0,
+          "end": 189,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 189,
+          "end": 367,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 367,
+          "end": 518,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 518,
+          "end": 738,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 738,
+          "end": 776,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 3,
+      "n_frames": 816,
+      "windows": [
+        {
+          "start": 0,
+          "end": 126,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 126,
+          "end": 365,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 365,
+          "end": 560,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 560,
+          "end": 734,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 734,
+          "end": 816,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 4,
+      "n_frames": 693,
+      "windows": [
+        {
+          "start": 0,
+          "end": 135,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 135,
+          "end": 321,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 321,
+          "end": 531,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 531,
+          "end": 671,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 671,
+          "end": 693,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 5,
+      "n_frames": 732,
+      "windows": [
+        {
+          "start": 0,
+          "end": 191,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 191,
+          "end": 366,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 366,
+          "end": 552,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 552,
+          "end": 708,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 708,
+          "end": 732,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 6,
+      "n_frames": 615,
+      "windows": [
+        {
+          "start": 0,
+          "end": 113,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 113,
+          "end": 272,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 272,
+          "end": 472,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 472,
+          "end": 554,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 554,
+          "end": 615,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 7,
+      "n_frames": 589,
+      "windows": [
+        {
+          "start": 0,
+          "end": 69,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 69,
+          "end": 203,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 203,
+          "end": 410,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 410,
+          "end": 564,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 564,
+          "end": 589,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 8,
+      "n_frames": 912,
+      "windows": [
+        {
+          "start": 0,
+          "end": 267,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 267,
+          "end": 422,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 422,
+          "end": 684,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 684,
+          "end": 874,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 874,
+          "end": 912,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 9,
+      "n_frames": 837,
+      "windows": [
+        {
+          "start": 0,
+          "end": 180,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 180,
+          "end": 399,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 399,
+          "end": 637,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 637,
+          "end": 799,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 799,
+          "end": 837,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 10,
+      "n_frames": 845,
+      "windows": [
+        {
+          "start": 0,
+          "end": 116,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 116,
+          "end": 372,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 372,
+          "end": 648,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 648,
+          "end": 804,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 804,
+          "end": 845,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 11,
+      "n_frames": 757,
+      "windows": [
+        {
+          "start": 0,
+          "end": 142,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 142,
+          "end": 286,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 286,
+          "end": 528,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 528,
+          "end": 702,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 702,
+          "end": 757,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 12,
+      "n_frames": 886,
+      "windows": [
+        {
+          "start": 0,
+          "end": 138,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 138,
+          "end": 317,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 317,
+          "end": 619,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 619,
+          "end": 854,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 854,
+          "end": 886,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 13,
+      "n_frames": 669,
+      "windows": [
+        {
+          "start": 0,
+          "end": 103,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 103,
+          "end": 241,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 241,
+          "end": 418,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 418,
+          "end": 594,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 594,
+          "end": 669,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 14,
+      "n_frames": 504,
+      "windows": [
+        {
+          "start": 0,
+          "end": 65,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 65,
+          "end": 204,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 204,
+          "end": 359,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 359,
+          "end": 482,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 482,
+          "end": 504,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 15,
+      "n_frames": 581,
+      "windows": [
+        {
+          "start": 0,
+          "end": 84,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 84,
+          "end": 199,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 199,
+          "end": 364,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 364,
+          "end": 524,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 524,
+          "end": 581,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 16,
+      "n_frames": 661,
+      "windows": [
+        {
+          "start": 0,
+          "end": 116,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 116,
+          "end": 220,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 220,
+          "end": 452,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 452,
+          "end": 614,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 614,
+          "end": 661,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 17,
+      "n_frames": 660,
+      "windows": [
+        {
+          "start": 0,
+          "end": 110,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 110,
+          "end": 233,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 233,
+          "end": 468,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 468,
+          "end": 642,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 642,
+          "end": 660,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 18,
+      "n_frames": 734,
+      "windows": [
+        {
+          "start": 0,
+          "end": 143,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 143,
+          "end": 301,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 301,
+          "end": 559,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 559,
+          "end": 705,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 705,
+          "end": 734,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 19,
+      "n_frames": 558,
+      "windows": [
+        {
+          "start": 0,
+          "end": 118,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 118,
+          "end": 223,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 223,
+          "end": 392,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 392,
+          "end": 507,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 507,
+          "end": 558,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 20,
+      "n_frames": 624,
+      "windows": [
+        {
+          "start": 0,
+          "end": 111,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 111,
+          "end": 254,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 254,
+          "end": 424,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 424,
+          "end": 571,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 571,
+          "end": 624,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 21,
+      "n_frames": 605,
+      "windows": [
+        {
+          "start": 0,
+          "end": 97,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 97,
+          "end": 263,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 263,
+          "end": 422,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 422,
+          "end": 577,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 577,
+          "end": 605,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 22,
+      "n_frames": 587,
+      "windows": [
+        {
+          "start": 0,
+          "end": 125,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 125,
+          "end": 260,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 260,
+          "end": 413,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 413,
+          "end": 562,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 562,
+          "end": 587,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 23,
+      "n_frames": 560,
+      "windows": [
+        {
+          "start": 0,
+          "end": 167,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 167,
+          "end": 294,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 294,
+          "end": 456,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 456,
+          "end": 531,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 531,
+          "end": 560,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 24,
+      "n_frames": 524,
+      "windows": [
+        {
+          "start": 0,
+          "end": 104,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 104,
+          "end": 250,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 250,
+          "end": 409,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 409,
+          "end": 503,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 503,
+          "end": 524,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 25,
+      "n_frames": 613,
+      "windows": [
+        {
+          "start": 0,
+          "end": 194,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 194,
+          "end": 365,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 365,
+          "end": 506,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 506,
+          "end": 590,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 590,
+          "end": 613,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 26,
+      "n_frames": 790,
+      "windows": [
+        {
+          "start": 0,
+          "end": 146,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 146,
+          "end": 327,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 327,
+          "end": 504,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 504,
+          "end": 763,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 763,
+          "end": 790,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 27,
+      "n_frames": 446,
+      "windows": [
+        {
+          "start": 0,
+          "end": 99,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 99,
+          "end": 197,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 197,
+          "end": 310,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 310,
+          "end": 424,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 424,
+          "end": 446,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 28,
+      "n_frames": 598,
+      "windows": [
+        {
+          "start": 0,
+          "end": 93,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 93,
+          "end": 240,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 240,
+          "end": 432,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 432,
+          "end": 570,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 570,
+          "end": 598,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 29,
+      "n_frames": 512,
+      "windows": [
+        {
+          "start": 0,
+          "end": 73,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 73,
+          "end": 168,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 168,
+          "end": 293,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 293,
+          "end": 455,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 455,
+          "end": 512,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 30,
+      "n_frames": 587,
+      "windows": [
+        {
+          "start": 0,
+          "end": 89,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 89,
+          "end": 258,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 258,
+          "end": 434,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 434,
+          "end": 563,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 563,
+          "end": 587,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 31,
+      "n_frames": 539,
+      "windows": [
+        {
+          "start": 0,
+          "end": 109,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 109,
+          "end": 237,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 237,
+          "end": 398,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 398,
+          "end": 493,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 493,
+          "end": 539,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 32,
+      "n_frames": 602,
+      "windows": [
+        {
+          "start": 0,
+          "end": 100,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 100,
+          "end": 270,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 270,
+          "end": 440,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 440,
+          "end": 581,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 581,
+          "end": 602,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 33,
+      "n_frames": 547,
+      "windows": [
+        {
+          "start": 0,
+          "end": 117,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 117,
+          "end": 232,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 232,
+          "end": 409,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 409,
+          "end": 529,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 529,
+          "end": 547,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 34,
+      "n_frames": 551,
+      "windows": [
+        {
+          "start": 0,
+          "end": 98,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 98,
+          "end": 236,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 236,
+          "end": 421,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 421,
+          "end": 534,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 534,
+          "end": 551,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 35,
+      "n_frames": 601,
+      "windows": [
+        {
+          "start": 0,
+          "end": 130,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 130,
+          "end": 242,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 242,
+          "end": 459,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 459,
+          "end": 571,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 571,
+          "end": 601,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 36,
+      "n_frames": 609,
+      "windows": [
+        {
+          "start": 0,
+          "end": 108,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 108,
+          "end": 272,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 272,
+          "end": 464,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 464,
+          "end": 575,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 575,
+          "end": 609,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 37,
+      "n_frames": 685,
+      "windows": [
+        {
+          "start": 0,
+          "end": 180,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 180,
+          "end": 282,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 282,
+          "end": 536,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 536,
+          "end": 653,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 653,
+          "end": 685,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 38,
+      "n_frames": 592,
+      "windows": [
+        {
+          "start": 0,
+          "end": 91,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 91,
+          "end": 205,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 205,
+          "end": 395,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 395,
+          "end": 571,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 571,
+          "end": 592,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 39,
+      "n_frames": 518,
+      "windows": [
+        {
+          "start": 0,
+          "end": 125,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 125,
+          "end": 247,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 247,
+          "end": 392,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 392,
+          "end": 501,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 501,
+          "end": 518,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 40,
+      "n_frames": 554,
+      "windows": [
+        {
+          "start": 0,
+          "end": 108,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 108,
+          "end": 246,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 246,
+          "end": 370,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 370,
+          "end": 526,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 526,
+          "end": 554,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 41,
+      "n_frames": 489,
+      "windows": [
+        {
+          "start": 0,
+          "end": 84,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 84,
+          "end": 219,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 219,
+          "end": 355,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 355,
+          "end": 471,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 471,
+          "end": 489,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 42,
+      "n_frames": 476,
+      "windows": [
+        {
+          "start": 0,
+          "end": 116,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 116,
+          "end": 224,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 224,
+          "end": 381,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 381,
+          "end": 461,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 461,
+          "end": 476,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 43,
+      "n_frames": 826,
+      "windows": [
+        {
+          "start": 0,
+          "end": 150,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 150,
+          "end": 431,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 431,
+          "end": 680,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 680,
+          "end": 804,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 804,
+          "end": 826,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 44,
+      "n_frames": 464,
+      "windows": [
+        {
+          "start": 0,
+          "end": 102,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 102,
+          "end": 207,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 207,
+          "end": 361,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 361,
+          "end": 450,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 450,
+          "end": 464,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 45,
+      "n_frames": 597,
+      "windows": [
+        {
+          "start": 0,
+          "end": 120,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 120,
+          "end": 230,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 230,
+          "end": 451,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 451,
+          "end": 582,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 582,
+          "end": 597,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 46,
+      "n_frames": 719,
+      "windows": [
+        {
+          "start": 0,
+          "end": 169,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 169,
+          "end": 312,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 312,
+          "end": 533,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 533,
+          "end": 697,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 697,
+          "end": 719,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 47,
+      "n_frames": 584,
+      "windows": [
+        {
+          "start": 0,
+          "end": 108,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 108,
+          "end": 254,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 254,
+          "end": 437,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 437,
+          "end": 566,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 566,
+          "end": 584,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 48,
+      "n_frames": 630,
+      "windows": [
+        {
+          "start": 0,
+          "end": 117,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 117,
+          "end": 215,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 215,
+          "end": 495,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 495,
+          "end": 619,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 619,
+          "end": 630,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 49,
+      "n_frames": 558,
+      "windows": [
+        {
+          "start": 0,
+          "end": 116,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 116,
+          "end": 223,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 223,
+          "end": 261,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 261,
+          "end": 320,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 320,
+          "end": 449,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 449,
+          "end": 523,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 523,
+          "end": 558,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 50,
+      "n_frames": 431,
+      "windows": [
+        {
+          "start": 0,
+          "end": 74,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 74,
+          "end": 171,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 171,
+          "end": 320,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 320,
+          "end": 412,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 412,
+          "end": 431,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 51,
+      "n_frames": 413,
+      "windows": [
+        {
+          "start": 0,
+          "end": 82,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the left cylinder."
+        },
+        {
+          "start": 82,
+          "end": 161,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the middle cylinder and release."
+        },
+        {
+          "start": 161,
+          "end": 303,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Stack three cylinder blocks. Grasp the right cylinder."
+        },
+        {
+          "start": 303,
+          "end": 378,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        },
+        {
+          "start": 378,
+          "end": 413,
+          "local_index": 3,
+          "kind": "tail",
+          "task": "Stack three cylinder blocks. Place it on the stack and release."
+        }
+      ],
+      "failed": false
+    }
+  ]
+}

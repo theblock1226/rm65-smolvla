@@ -1,0 +1,55 @@
+{
+  "schema": "rm65/subtask_language/v1",
+  "notes": {
+    "shared_vocab": true,
+    "per_episode_timestamps": true,
+    "train_string": "{overall} {subtask}",
+    "tokenizer_max_length": 48,
+    "skip": ["USB insert failed episodes (task 'failed')"]
+  },
+  "datasets": {
+    "rm65_stacking_blocks": {
+      "overall": "Stack three cylinder blocks.",
+      "subtasks": [
+        "Grasp the left cylinder.",
+        "Place it on the middle cylinder and release.",
+        "Grasp the right cylinder.",
+        "Place it on the stack and release."
+      ]
+    },
+    "rm65_cleanup_the_desk": {
+      "overall": "Put three objects from the desk into the box.",
+      "order": "left_to_right",
+      "subtasks": [
+        "Grasp the left object.",
+        "Place it in the box and release.",
+        "Grasp the middle object.",
+        "Place it in the box and release.",
+        "Grasp the right object.",
+        "Place it in the box and release."
+      ]
+    },
+    "rm65_place_to_slot": {
+      "overall": "Place three objects into matching slots on the silver card.",
+      "subtasks": [
+        "Rotate the gripper and grasp the cylinder.",
+        "Lift and rotate the cylinder to align with the round slot.",
+        "Insert into the round slot and release.",
+        "Rotate the gripper and grasp the T-shaped wooden block.",
+        "Lift and rotate the T-shaped wooden block to align with the T-shaped slot.",
+        "Insert into the T-shaped slot and release.",
+        "Rotate the gripper and grasp the blue box.",
+        "Lift and rotate the blue box to align with the rectangular slot.",
+        "Insert into the rectangular slot and release."
+      ]
+    },
+    "rm65_usb_insert": {
+      "overall": "Insert the blue USB module into the white base.",
+      "subtasks": [
+        "Rotate the gripper and grasp the blue USB module.",
+        "Lift and align the USB with the port.",
+        "Insert into the white base and release."
+      ]
+    }
+  }
+}

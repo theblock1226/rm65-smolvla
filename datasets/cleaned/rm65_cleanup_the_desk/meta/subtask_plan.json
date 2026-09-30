@@ -1,0 +1,2971 @@
+{
+  "schema": "rm65/subtask_plan/v1",
+  "dataset": "rm65_cleanup_the_desk",
+  "overall": "Put three objects from the desk into the box.",
+  "subtasks": [
+    "Grasp the left object.",
+    "Place it in the box and release.",
+    "Grasp the middle object.",
+    "Place it in the box and release.",
+    "Grasp the right object.",
+    "Place it in the box and release."
+  ],
+  "train_string": "{overall} {subtask}",
+  "fps": 20.0,
+  "episodes": [
+    {
+      "episode_index": 0,
+      "n_frames": 1440,
+      "windows": [
+        {
+          "start": 0,
+          "end": 205,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 205,
+          "end": 427,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 427,
+          "end": 761,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 761,
+          "end": 953,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 953,
+          "end": 1273,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 1273,
+          "end": 1412,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 1412,
+          "end": 1440,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 1,
+      "n_frames": 1208,
+      "windows": [
+        {
+          "start": 0,
+          "end": 173,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 173,
+          "end": 295,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 295,
+          "end": 479,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 479,
+          "end": 632,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 632,
+          "end": 976,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 976,
+          "end": 1174,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 1174,
+          "end": 1208,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 2,
+      "n_frames": 1121,
+      "windows": [
+        {
+          "start": 0,
+          "end": 161,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 161,
+          "end": 276,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 276,
+          "end": 447,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 447,
+          "end": 604,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 604,
+          "end": 917,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 917,
+          "end": 1070,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 1070,
+          "end": 1121,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 3,
+      "n_frames": 1413,
+      "windows": [
+        {
+          "start": 0,
+          "end": 176,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 176,
+          "end": 298,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 298,
+          "end": 557,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 557,
+          "end": 714,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 714,
+          "end": 1221,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 1221,
+          "end": 1350,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 1350,
+          "end": 1413,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 4,
+      "n_frames": 1032,
+      "windows": [
+        {
+          "start": 0,
+          "end": 121,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 121,
+          "end": 240,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 240,
+          "end": 427,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 427,
+          "end": 586,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 586,
+          "end": 860,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 860,
+          "end": 1005,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 1005,
+          "end": 1032,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 5,
+      "n_frames": 949,
+      "windows": [
+        {
+          "start": 0,
+          "end": 124,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 124,
+          "end": 221,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 221,
+          "end": 458,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 458,
+          "end": 591,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 591,
+          "end": 769,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 769,
+          "end": 922,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 922,
+          "end": 949,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 6,
+      "n_frames": 891,
+      "windows": [
+        {
+          "start": 0,
+          "end": 127,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 127,
+          "end": 227,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 227,
+          "end": 417,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 417,
+          "end": 533,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 533,
+          "end": 727,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 727,
+          "end": 850,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 850,
+          "end": 891,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 7,
+      "n_frames": 1004,
+      "windows": [
+        {
+          "start": 0,
+          "end": 159,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 159,
+          "end": 270,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 270,
+          "end": 397,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 397,
+          "end": 440,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 440,
+          "end": 488,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 488,
+          "end": 616,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 616,
+          "end": 751,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 751,
+          "end": 903,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 903,
+          "end": 1004,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 8,
+      "n_frames": 771,
+      "windows": [
+        {
+          "start": 0,
+          "end": 135,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 135,
+          "end": 226,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 226,
+          "end": 397,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 397,
+          "end": 510,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 510,
+          "end": 644,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 644,
+          "end": 749,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 749,
+          "end": 771,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 9,
+      "n_frames": 762,
+      "windows": [
+        {
+          "start": 0,
+          "end": 156,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 156,
+          "end": 245,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 245,
+          "end": 363,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 363,
+          "end": 457,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 457,
+          "end": 609,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 609,
+          "end": 733,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 733,
+          "end": 762,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 10,
+      "n_frames": 1045,
+      "windows": [
+        {
+          "start": 0,
+          "end": 94,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 94,
+          "end": 175,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 175,
+          "end": 373,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 373,
+          "end": 474,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 474,
+          "end": 760,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 760,
+          "end": 804,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 804,
+          "end": 871,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 871,
+          "end": 1008,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 1008,
+          "end": 1045,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 11,
+      "n_frames": 975,
+      "windows": [
+        {
+          "start": 0,
+          "end": 142,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 142,
+          "end": 252,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 252,
+          "end": 400,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 400,
+          "end": 491,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 491,
+          "end": 821,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 821,
+          "end": 948,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 948,
+          "end": 975,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 12,
+      "n_frames": 1024,
+      "windows": [
+        {
+          "start": 0,
+          "end": 103,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 103,
+          "end": 205,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 205,
+          "end": 381,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 381,
+          "end": 511,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 511,
+          "end": 831,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 831,
+          "end": 975,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 975,
+          "end": 1024,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 13,
+      "n_frames": 996,
+      "windows": [
+        {
+          "start": 0,
+          "end": 148,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 148,
+          "end": 254,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 254,
+          "end": 443,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 443,
+          "end": 548,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 548,
+          "end": 814,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 814,
+          "end": 995,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 995,
+          "end": 996,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 14,
+      "n_frames": 1070,
+      "windows": [
+        {
+          "start": 0,
+          "end": 137,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 137,
+          "end": 244,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 244,
+          "end": 463,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 463,
+          "end": 565,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 565,
+          "end": 827,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 827,
+          "end": 1018,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 1018,
+          "end": 1070,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 15,
+      "n_frames": 1091,
+      "windows": [
+        {
+          "start": 0,
+          "end": 148,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 148,
+          "end": 260,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 260,
+          "end": 476,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 476,
+          "end": 603,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 603,
+          "end": 878,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 878,
+          "end": 1050,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 1050,
+          "end": 1091,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 16,
+      "n_frames": 1124,
+      "windows": [
+        {
+          "start": 0,
+          "end": 122,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 122,
+          "end": 255,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 255,
+          "end": 474,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 474,
+          "end": 620,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 620,
+          "end": 867,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 867,
+          "end": 1072,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 1072,
+          "end": 1124,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 17,
+      "n_frames": 909,
+      "windows": [
+        {
+          "start": 0,
+          "end": 146,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 146,
+          "end": 248,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 248,
+          "end": 382,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 382,
+          "end": 492,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 492,
+          "end": 762,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 762,
+          "end": 889,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 889,
+          "end": 909,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 18,
+      "n_frames": 811,
+      "windows": [
+        {
+          "start": 0,
+          "end": 136,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 136,
+          "end": 227,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 227,
+          "end": 370,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 370,
+          "end": 469,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 469,
+          "end": 662,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 662,
+          "end": 793,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 793,
+          "end": 811,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 19,
+      "n_frames": 705,
+      "windows": [
+        {
+          "start": 0,
+          "end": 129,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 129,
+          "end": 215,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 215,
+          "end": 324,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 324,
+          "end": 414,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 414,
+          "end": 588,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 588,
+          "end": 704,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 704,
+          "end": 705,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 20,
+      "n_frames": 787,
+      "windows": [
+        {
+          "start": 0,
+          "end": 120,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 120,
+          "end": 201,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 201,
+          "end": 350,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 350,
+          "end": 458,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 458,
+          "end": 648,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 648,
+          "end": 759,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 759,
+          "end": 787,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 21,
+      "n_frames": 803,
+      "windows": [
+        {
+          "start": 0,
+          "end": 135,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 135,
+          "end": 256,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 256,
+          "end": 476,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 476,
+          "end": 582,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 582,
+          "end": 695,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 695,
+          "end": 802,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 802,
+          "end": 803,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 22,
+      "n_frames": 799,
+      "windows": [
+        {
+          "start": 0,
+          "end": 152,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 152,
+          "end": 249,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 249,
+          "end": 470,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 470,
+          "end": 582,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 582,
+          "end": 722,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 722,
+          "end": 798,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 798,
+          "end": 799,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 23,
+      "n_frames": 715,
+      "windows": [
+        {
+          "start": 0,
+          "end": 139,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 139,
+          "end": 231,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 231,
+          "end": 348,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 348,
+          "end": 454,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 454,
+          "end": 594,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 594,
+          "end": 672,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 672,
+          "end": 715,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 24,
+      "n_frames": 784,
+      "windows": [
+        {
+          "start": 0,
+          "end": 153,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 153,
+          "end": 287,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 287,
+          "end": 470,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 470,
+          "end": 584,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 584,
+          "end": 700,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 700,
+          "end": 783,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 783,
+          "end": 784,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 25,
+      "n_frames": 826,
+      "windows": [
+        {
+          "start": 0,
+          "end": 183,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 183,
+          "end": 288,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 288,
+          "end": 490,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 490,
+          "end": 609,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 609,
+          "end": 747,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 747,
+          "end": 825,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 825,
+          "end": 826,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 26,
+      "n_frames": 870,
+      "windows": [
+        {
+          "start": 0,
+          "end": 189,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 189,
+          "end": 298,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 298,
+          "end": 456,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 456,
+          "end": 585,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 585,
+          "end": 738,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 738,
+          "end": 832,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 832,
+          "end": 870,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 27,
+      "n_frames": 814,
+      "windows": [
+        {
+          "start": 0,
+          "end": 132,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 132,
+          "end": 224,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 224,
+          "end": 403,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 403,
+          "end": 504,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 504,
+          "end": 684,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 684,
+          "end": 783,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 783,
+          "end": 814,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 28,
+      "n_frames": 922,
+      "windows": [
+        {
+          "start": 0,
+          "end": 191,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 191,
+          "end": 297,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 297,
+          "end": 506,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 506,
+          "end": 630,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 630,
+          "end": 807,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 807,
+          "end": 921,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 921,
+          "end": 922,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 29,
+      "n_frames": 873,
+      "windows": [
+        {
+          "start": 0,
+          "end": 165,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 165,
+          "end": 298,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 298,
+          "end": 451,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 451,
+          "end": 578,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 578,
+          "end": 713,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 713,
+          "end": 803,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 803,
+          "end": 873,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 30,
+      "n_frames": 785,
+      "windows": [
+        {
+          "start": 0,
+          "end": 146,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 146,
+          "end": 260,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 260,
+          "end": 392,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 392,
+          "end": 527,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 527,
+          "end": 648,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 648,
+          "end": 748,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 748,
+          "end": 785,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 31,
+      "n_frames": 899,
+      "windows": [
+        {
+          "start": 0,
+          "end": 142,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 142,
+          "end": 247,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 247,
+          "end": 388,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 388,
+          "end": 554,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 554,
+          "end": 759,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 759,
+          "end": 898,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 898,
+          "end": 899,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 32,
+      "n_frames": 860,
+      "windows": [
+        {
+          "start": 0,
+          "end": 194,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 194,
+          "end": 311,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 311,
+          "end": 490,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 490,
+          "end": 594,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 594,
+          "end": 743,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 743,
+          "end": 859,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 859,
+          "end": 860,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 33,
+      "n_frames": 888,
+      "windows": [
+        {
+          "start": 0,
+          "end": 159,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 159,
+          "end": 275,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 275,
+          "end": 422,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 422,
+          "end": 555,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 555,
+          "end": 739,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 739,
+          "end": 887,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 887,
+          "end": 888,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 34,
+      "n_frames": 957,
+      "windows": [
+        {
+          "start": 0,
+          "end": 161,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 161,
+          "end": 256,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 256,
+          "end": 309,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 309,
+          "end": 437,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 437,
+          "end": 579,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 579,
+          "end": 684,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 684,
+          "end": 838,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 838,
+          "end": 956,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 956,
+          "end": 957,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 35,
+      "n_frames": 935,
+      "windows": [
+        {
+          "start": 0,
+          "end": 167,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 167,
+          "end": 287,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 287,
+          "end": 441,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 441,
+          "end": 567,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 567,
+          "end": 799,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 799,
+          "end": 896,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 896,
+          "end": 935,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 36,
+      "n_frames": 759,
+      "windows": [
+        {
+          "start": 0,
+          "end": 147,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 147,
+          "end": 259,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 259,
+          "end": 373,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 373,
+          "end": 493,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 493,
+          "end": 636,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 636,
+          "end": 758,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 758,
+          "end": 759,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 37,
+      "n_frames": 701,
+      "windows": [
+        {
+          "start": 0,
+          "end": 165,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 165,
+          "end": 253,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 253,
+          "end": 339,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 339,
+          "end": 436,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 436,
+          "end": 561,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 561,
+          "end": 654,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 654,
+          "end": 701,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 38,
+      "n_frames": 815,
+      "windows": [
+        {
+          "start": 0,
+          "end": 126,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 126,
+          "end": 223,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 223,
+          "end": 397,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 397,
+          "end": 490,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 490,
+          "end": 700,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 700,
+          "end": 814,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 814,
+          "end": 815,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 39,
+      "n_frames": 820,
+      "windows": [
+        {
+          "start": 0,
+          "end": 125,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 125,
+          "end": 228,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 228,
+          "end": 372,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 372,
+          "end": 492,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 492,
+          "end": 690,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 690,
+          "end": 819,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 819,
+          "end": 820,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 40,
+      "n_frames": 877,
+      "windows": [
+        {
+          "start": 0,
+          "end": 181,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 181,
+          "end": 280,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 280,
+          "end": 420,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 420,
+          "end": 526,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 526,
+          "end": 752,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 752,
+          "end": 876,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 876,
+          "end": 877,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 41,
+      "n_frames": 791,
+      "windows": [
+        {
+          "start": 0,
+          "end": 187,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 187,
+          "end": 323,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 323,
+          "end": 477,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 477,
+          "end": 576,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 576,
+          "end": 703,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 703,
+          "end": 790,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 790,
+          "end": 791,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 42,
+      "n_frames": 864,
+      "windows": [
+        {
+          "start": 0,
+          "end": 183,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 183,
+          "end": 283,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 283,
+          "end": 403,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 403,
+          "end": 486,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 486,
+          "end": 765,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 765,
+          "end": 863,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 863,
+          "end": 864,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 43,
+      "n_frames": 720,
+      "windows": [
+        {
+          "start": 0,
+          "end": 126,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 126,
+          "end": 216,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 216,
+          "end": 320,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 320,
+          "end": 400,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 400,
+          "end": 564,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 564,
+          "end": 648,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 648,
+          "end": 720,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 44,
+      "n_frames": 654,
+      "windows": [
+        {
+          "start": 0,
+          "end": 145,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 145,
+          "end": 226,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 226,
+          "end": 332,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 332,
+          "end": 410,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 410,
+          "end": 561,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 561,
+          "end": 653,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 653,
+          "end": 654,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 45,
+      "n_frames": 707,
+      "windows": [
+        {
+          "start": 0,
+          "end": 104,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 104,
+          "end": 212,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 212,
+          "end": 371,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 371,
+          "end": 454,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 454,
+          "end": 625,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 625,
+          "end": 706,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 706,
+          "end": 707,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 46,
+      "n_frames": 775,
+      "windows": [
+        {
+          "start": 0,
+          "end": 158,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 158,
+          "end": 251,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 251,
+          "end": 406,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 406,
+          "end": 485,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 485,
+          "end": 647,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 647,
+          "end": 746,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 746,
+          "end": 775,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 47,
+      "n_frames": 676,
+      "windows": [
+        {
+          "start": 0,
+          "end": 141,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 141,
+          "end": 235,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 235,
+          "end": 370,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 370,
+          "end": 444,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 444,
+          "end": 589,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 589,
+          "end": 675,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 675,
+          "end": 676,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 48,
+      "n_frames": 662,
+      "windows": [
+        {
+          "start": 0,
+          "end": 172,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 172,
+          "end": 251,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 251,
+          "end": 357,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 357,
+          "end": 423,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 423,
+          "end": 576,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 576,
+          "end": 661,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 661,
+          "end": 662,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 49,
+      "n_frames": 644,
+      "windows": [
+        {
+          "start": 0,
+          "end": 119,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 119,
+          "end": 216,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 216,
+          "end": 311,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 311,
+          "end": 385,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 385,
+          "end": 545,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 545,
+          "end": 643,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 643,
+          "end": 644,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 50,
+      "n_frames": 651,
+      "windows": [
+        {
+          "start": 0,
+          "end": 118,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 118,
+          "end": 219,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 219,
+          "end": 322,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 322,
+          "end": 402,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 402,
+          "end": 532,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 532,
+          "end": 608,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 608,
+          "end": 651,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 51,
+      "n_frames": 743,
+      "windows": [
+        {
+          "start": 0,
+          "end": 160,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the left object."
+        },
+        {
+          "start": 160,
+          "end": 238,
+          "local_index": 1,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 238,
+          "end": 431,
+          "local_index": 2,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the middle object."
+        },
+        {
+          "start": 431,
+          "end": 499,
+          "local_index": 3,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 499,
+          "end": 639,
+          "local_index": 4,
+          "kind": "grasp",
+          "task": "Put three objects from the desk into the box. Grasp the right object."
+        },
+        {
+          "start": 639,
+          "end": 742,
+          "local_index": 5,
+          "kind": "place",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        },
+        {
+          "start": 742,
+          "end": 743,
+          "local_index": 5,
+          "kind": "tail",
+          "task": "Put three objects from the desk into the box. Place it in the box and release."
+        }
+      ],
+      "failed": false
+    }
+  ]
+}

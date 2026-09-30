@@ -1,0 +1,12 @@
+{
+  "joints_deg": [
+    -155.43,
+    -90.165,
+    51.012,
+    148.47,
+    -122.599,
+    -19.702
+  ],
+  "updated_at": "2026-09-28T08:12:00+00:00",
+  "note": "推理起点：cleaned rm65_stacking_blocks 52 条 episode 第 0 帧关节均值。录制就绪位仍是 rm65_ready_pose.json。夹爪由 eval prep 张开。"
+}

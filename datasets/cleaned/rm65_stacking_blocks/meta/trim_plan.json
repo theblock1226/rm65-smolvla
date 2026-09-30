@@ -1,0 +1,1510 @@
+{
+  "source": "/home/sdznkj/zkx_ws/sendlerobot/datasets/small_tasks/rm65_stacking_blocks",
+  "fps": 20.0,
+  "idle_deg": 0.08,
+  "min_cut_s": 0.4,
+  "internal_min_s": 2.0,
+  "jump_deg": 8.0,
+  "video_keys": [
+    "observation.images.front",
+    "observation.images.astra"
+  ],
+  "summary": {
+    "n_episodes": 52,
+    "src_seconds": 1733.4499999999998,
+    "keep_seconds": 1637.45,
+    "cut_seconds": 96.00000000000003
+  },
+  "episodes": [
+    {
+      "n_frames": 784,
+      "keep": {
+        "start": 0,
+        "end": 769,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 769,
+          "end": 784,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.4043,
+      "duration_s": 39.2,
+      "keep_s": 38.45,
+      "cut_s": 0.75,
+      "episode_index": 0,
+      "task": null
+    },
+    {
+      "n_frames": 1121,
+      "keep": {
+        "start": 27,
+        "end": 877,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 27,
+          "seconds": 1.35,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 877,
+          "end": 1121,
+          "seconds": 12.2,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 741,
+          "end": 867,
+          "seconds": 6.3,
+          "apply": true,
+          "reason": "中间停住约 6.3s（默认不裁，可能是对准/观察）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.5763,
+      "duration_s": 56.05,
+      "keep_s": 36.2,
+      "cut_s": 19.85,
+      "episode_index": 1,
+      "task": null
+    },
+    {
+      "n_frames": 825,
+      "keep": {
+        "start": 39,
+        "end": 815,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 39,
+          "seconds": 1.95,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 815,
+          "end": 825,
+          "seconds": 0.5,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.4485,
+      "duration_s": 41.25,
+      "keep_s": 38.8,
+      "cut_s": 2.45,
+      "episode_index": 2,
+      "task": null
+    },
+    {
+      "n_frames": 849,
+      "keep": {
+        "start": 33,
+        "end": 849,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 33,
+          "seconds": 1.65,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3769,
+      "duration_s": 42.45,
+      "keep_s": 40.8,
+      "cut_s": 1.65,
+      "episode_index": 3,
+      "task": null
+    },
+    {
+      "n_frames": 762,
+      "keep": {
+        "start": 33,
+        "end": 726,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 33,
+          "seconds": 1.65,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 726,
+          "end": 762,
+          "seconds": 1.8,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.357,
+      "duration_s": 38.1,
+      "keep_s": 34.65,
+      "cut_s": 3.45,
+      "episode_index": 4,
+      "task": null
+    },
+    {
+      "n_frames": 773,
+      "keep": {
+        "start": 0,
+        "end": 732,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 732,
+          "end": 773,
+          "seconds": 2.05,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3881,
+      "duration_s": 38.65,
+      "keep_s": 36.6,
+      "cut_s": 2.05,
+      "episode_index": 5,
+      "task": null
+    },
+    {
+      "n_frames": 615,
+      "keep": {
+        "start": 0,
+        "end": 615,
+        "apply": false
+      },
+      "cuts": [],
+      "flags": [],
+      "idle_fraction": 0.3805,
+      "duration_s": 30.75,
+      "keep_s": 30.75,
+      "cut_s": 0.0,
+      "episode_index": 6,
+      "task": null
+    },
+    {
+      "n_frames": 648,
+      "keep": {
+        "start": 29,
+        "end": 618,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 29,
+          "seconds": 1.45,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 618,
+          "end": 648,
+          "seconds": 1.5,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.409,
+      "duration_s": 32.4,
+      "keep_s": 29.45,
+      "cut_s": 2.95,
+      "episode_index": 7,
+      "task": null
+    },
+    {
+      "n_frames": 952,
+      "keep": {
+        "start": 0,
+        "end": 912,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 912,
+          "end": 952,
+          "seconds": 2.0,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.4244,
+      "duration_s": 47.6,
+      "keep_s": 45.6,
+      "cut_s": 2.0,
+      "episode_index": 8,
+      "task": null
+    },
+    {
+      "n_frames": 866,
+      "keep": {
+        "start": 16,
+        "end": 853,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 16,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 853,
+          "end": 866,
+          "seconds": 0.65,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.373,
+      "duration_s": 43.3,
+      "keep_s": 41.85,
+      "cut_s": 1.45,
+      "episode_index": 9,
+      "task": null
+    },
+    {
+      "n_frames": 906,
+      "keep": {
+        "start": 26,
+        "end": 871,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 26,
+          "seconds": 1.3,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 871,
+          "end": 906,
+          "seconds": 1.75,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.4128,
+      "duration_s": 45.3,
+      "keep_s": 42.25,
+      "cut_s": 3.05,
+      "episode_index": 10,
+      "task": null
+    },
+    {
+      "n_frames": 798,
+      "keep": {
+        "start": 26,
+        "end": 783,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 26,
+          "seconds": 1.3,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 783,
+          "end": 798,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.4336,
+      "duration_s": 39.9,
+      "keep_s": 37.85,
+      "cut_s": 2.05,
+      "episode_index": 11,
+      "task": null
+    },
+    {
+      "n_frames": 955,
+      "keep": {
+        "start": 10,
+        "end": 896,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 10,
+          "seconds": 0.5,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 896,
+          "end": 955,
+          "seconds": 2.95,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3372,
+      "duration_s": 47.75,
+      "keep_s": 44.3,
+      "cut_s": 3.45,
+      "episode_index": 12,
+      "task": null
+    },
+    {
+      "n_frames": 712,
+      "keep": {
+        "start": 16,
+        "end": 685,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 16,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 685,
+          "end": 712,
+          "seconds": 1.35,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.368,
+      "duration_s": 35.6,
+      "keep_s": 33.45,
+      "cut_s": 2.15,
+      "episode_index": 13,
+      "task": null
+    },
+    {
+      "n_frames": 519,
+      "keep": {
+        "start": 15,
+        "end": 519,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 15,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3295,
+      "duration_s": 25.95,
+      "keep_s": 25.2,
+      "cut_s": 0.75,
+      "episode_index": 14,
+      "task": null
+    },
+    {
+      "n_frames": 620,
+      "keep": {
+        "start": 22,
+        "end": 603,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 22,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 603,
+          "end": 620,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3645,
+      "duration_s": 31.0,
+      "keep_s": 29.05,
+      "cut_s": 1.95,
+      "episode_index": 15,
+      "task": null
+    },
+    {
+      "n_frames": 661,
+      "keep": {
+        "start": 0,
+        "end": 661,
+        "apply": false
+      },
+      "cuts": [],
+      "flags": [],
+      "idle_fraction": 0.3585,
+      "duration_s": 33.05,
+      "keep_s": 33.05,
+      "cut_s": 0.0,
+      "episode_index": 16,
+      "task": null
+    },
+    {
+      "n_frames": 710,
+      "keep": {
+        "start": 17,
+        "end": 677,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 17,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 677,
+          "end": 710,
+          "seconds": 1.65,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3732,
+      "duration_s": 35.5,
+      "keep_s": 33.0,
+      "cut_s": 2.5,
+      "episode_index": 17,
+      "task": null
+    },
+    {
+      "n_frames": 755,
+      "keep": {
+        "start": 12,
+        "end": 746,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 12,
+          "seconds": 0.6,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 746,
+          "end": 755,
+          "seconds": 0.45,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2914,
+      "duration_s": 37.75,
+      "keep_s": 36.7,
+      "cut_s": 1.05,
+      "episode_index": 18,
+      "task": null
+    },
+    {
+      "n_frames": 573,
+      "keep": {
+        "start": 15,
+        "end": 573,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 15,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2618,
+      "duration_s": 28.65,
+      "keep_s": 27.9,
+      "cut_s": 0.75,
+      "episode_index": 19,
+      "task": null
+    },
+    {
+      "n_frames": 637,
+      "keep": {
+        "start": 13,
+        "end": 637,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 13,
+          "seconds": 0.65,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2716,
+      "duration_s": 31.85,
+      "keep_s": 31.2,
+      "cut_s": 0.65,
+      "episode_index": 20,
+      "task": null
+    },
+    {
+      "n_frames": 623,
+      "keep": {
+        "start": 8,
+        "end": 613,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 8,
+          "seconds": 0.4,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 613,
+          "end": 623,
+          "seconds": 0.5,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3002,
+      "duration_s": 31.15,
+      "keep_s": 30.25,
+      "cut_s": 0.9,
+      "episode_index": 21,
+      "task": null
+    },
+    {
+      "n_frames": 615,
+      "keep": {
+        "start": 11,
+        "end": 598,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 11,
+          "seconds": 0.55,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 598,
+          "end": 615,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2992,
+      "duration_s": 30.75,
+      "keep_s": 29.35,
+      "cut_s": 1.4,
+      "episode_index": 22,
+      "task": null
+    },
+    {
+      "n_frames": 576,
+      "keep": {
+        "start": 16,
+        "end": 576,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 16,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2535,
+      "duration_s": 28.8,
+      "keep_s": 28.0,
+      "cut_s": 0.8,
+      "episode_index": 23,
+      "task": null
+    },
+    {
+      "n_frames": 562,
+      "keep": {
+        "start": 21,
+        "end": 545,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 21,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 545,
+          "end": 562,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2794,
+      "duration_s": 28.1,
+      "keep_s": 26.2,
+      "cut_s": 1.9,
+      "episode_index": 24,
+      "task": null
+    },
+    {
+      "n_frames": 645,
+      "keep": {
+        "start": 0,
+        "end": 613,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 613,
+          "end": 645,
+          "seconds": 1.6,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2992,
+      "duration_s": 32.25,
+      "keep_s": 30.65,
+      "cut_s": 1.6,
+      "episode_index": 25,
+      "task": null
+    },
+    {
+      "n_frames": 812,
+      "keep": {
+        "start": 0,
+        "end": 790,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 790,
+          "end": 812,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3337,
+      "duration_s": 40.6,
+      "keep_s": 39.5,
+      "cut_s": 1.1,
+      "episode_index": 26,
+      "task": null
+    },
+    {
+      "n_frames": 474,
+      "keep": {
+        "start": 0,
+        "end": 446,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 446,
+          "end": 474,
+          "seconds": 1.4,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2722,
+      "duration_s": 23.7,
+      "keep_s": 22.3,
+      "cut_s": 1.4,
+      "episode_index": 27,
+      "task": null
+    },
+    {
+      "n_frames": 612,
+      "keep": {
+        "start": 0,
+        "end": 598,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 598,
+          "end": 612,
+          "seconds": 0.7,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2843,
+      "duration_s": 30.6,
+      "keep_s": 29.9,
+      "cut_s": 0.7,
+      "episode_index": 28,
+      "task": null
+    },
+    {
+      "n_frames": 575,
+      "keep": {
+        "start": 0,
+        "end": 512,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 512,
+          "end": 575,
+          "seconds": 3.15,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3843,
+      "duration_s": 28.75,
+      "keep_s": 25.6,
+      "cut_s": 3.15,
+      "episode_index": 29,
+      "task": null
+    },
+    {
+      "n_frames": 597,
+      "keep": {
+        "start": 10,
+        "end": 597,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 10,
+          "seconds": 0.5,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2814,
+      "duration_s": 29.85,
+      "keep_s": 29.35,
+      "cut_s": 0.5,
+      "episode_index": 30,
+      "task": null
+    },
+    {
+      "n_frames": 587,
+      "keep": {
+        "start": 0,
+        "end": 587,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "internal_idle",
+          "start": 212,
+          "end": 260,
+          "seconds": 2.4,
+          "apply": true,
+          "reason": "中间停住约 2.4s（默认不裁，可能是对准/观察）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3032,
+      "duration_s": 29.35,
+      "keep_s": 26.95,
+      "cut_s": 2.4,
+      "episode_index": 31,
+      "task": null
+    },
+    {
+      "n_frames": 627,
+      "keep": {
+        "start": 14,
+        "end": 616,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 14,
+          "seconds": 0.7,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 616,
+          "end": 627,
+          "seconds": 0.55,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3126,
+      "duration_s": 31.35,
+      "keep_s": 30.1,
+      "cut_s": 1.25,
+      "episode_index": 32,
+      "task": null
+    },
+    {
+      "n_frames": 557,
+      "keep": {
+        "start": 10,
+        "end": 557,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 10,
+          "seconds": 0.5,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2298,
+      "duration_s": 27.85,
+      "keep_s": 27.35,
+      "cut_s": 0.5,
+      "episode_index": 33,
+      "task": null
+    },
+    {
+      "n_frames": 589,
+      "keep": {
+        "start": 21,
+        "end": 572,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 21,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 572,
+          "end": 589,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3514,
+      "duration_s": 29.45,
+      "keep_s": 27.55,
+      "cut_s": 1.9,
+      "episode_index": 34,
+      "task": null
+    },
+    {
+      "n_frames": 626,
+      "keep": {
+        "start": 0,
+        "end": 601,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 601,
+          "end": 626,
+          "seconds": 1.25,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2987,
+      "duration_s": 31.3,
+      "keep_s": 30.05,
+      "cut_s": 1.25,
+      "episode_index": 35,
+      "task": null
+    },
+    {
+      "n_frames": 630,
+      "keep": {
+        "start": 0,
+        "end": 609,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 609,
+          "end": 630,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2714,
+      "duration_s": 31.5,
+      "keep_s": 30.45,
+      "cut_s": 1.05,
+      "episode_index": 36,
+      "task": null
+    },
+    {
+      "n_frames": 712,
+      "keep": {
+        "start": 0,
+        "end": 685,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 685,
+          "end": 712,
+          "seconds": 1.35,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2753,
+      "duration_s": 35.6,
+      "keep_s": 34.25,
+      "cut_s": 1.35,
+      "episode_index": 37,
+      "task": null
+    },
+    {
+      "n_frames": 608,
+      "keep": {
+        "start": 0,
+        "end": 592,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 592,
+          "end": 608,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2993,
+      "duration_s": 30.4,
+      "keep_s": 29.6,
+      "cut_s": 0.8,
+      "episode_index": 38,
+      "task": null
+    },
+    {
+      "n_frames": 537,
+      "keep": {
+        "start": 10,
+        "end": 528,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 10,
+          "seconds": 0.5,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 528,
+          "end": 537,
+          "seconds": 0.45,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2626,
+      "duration_s": 26.85,
+      "keep_s": 25.9,
+      "cut_s": 0.95,
+      "episode_index": 39,
+      "task": null
+    },
+    {
+      "n_frames": 590,
+      "keep": {
+        "start": 20,
+        "end": 574,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 20,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 574,
+          "end": 590,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2797,
+      "duration_s": 29.5,
+      "keep_s": 27.7,
+      "cut_s": 1.8,
+      "episode_index": 40,
+      "task": null
+    },
+    {
+      "n_frames": 500,
+      "keep": {
+        "start": 0,
+        "end": 489,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 489,
+          "end": 500,
+          "seconds": 0.55,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.186,
+      "duration_s": 25.0,
+      "keep_s": 24.45,
+      "cut_s": 0.55,
+      "episode_index": 41,
+      "task": null
+    },
+    {
+      "n_frames": 514,
+      "keep": {
+        "start": 18,
+        "end": 494,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 18,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 494,
+          "end": 514,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2646,
+      "duration_s": 25.7,
+      "keep_s": 23.8,
+      "cut_s": 1.9,
+      "episode_index": 42,
+      "task": null
+    },
+    {
+      "n_frames": 835,
+      "keep": {
+        "start": 0,
+        "end": 826,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 826,
+          "end": 835,
+          "seconds": 0.45,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3473,
+      "duration_s": 41.75,
+      "keep_s": 41.3,
+      "cut_s": 0.45,
+      "episode_index": 43,
+      "task": null
+    },
+    {
+      "n_frames": 495,
+      "keep": {
+        "start": 20,
+        "end": 484,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 20,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 484,
+          "end": 495,
+          "seconds": 0.55,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2323,
+      "duration_s": 24.75,
+      "keep_s": 23.2,
+      "cut_s": 1.55,
+      "episode_index": 44,
+      "task": null
+    },
+    {
+      "n_frames": 611,
+      "keep": {
+        "start": 14,
+        "end": 611,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 14,
+          "seconds": 0.7,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2488,
+      "duration_s": 30.55,
+      "keep_s": 29.85,
+      "cut_s": 0.7,
+      "episode_index": 45,
+      "task": null
+    },
+    {
+      "n_frames": 758,
+      "keep": {
+        "start": 24,
+        "end": 743,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 24,
+          "seconds": 1.2,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 743,
+          "end": 758,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2916,
+      "duration_s": 37.9,
+      "keep_s": 35.95,
+      "cut_s": 1.95,
+      "episode_index": 46,
+      "task": null
+    },
+    {
+      "n_frames": 622,
+      "keep": {
+        "start": 26,
+        "end": 610,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 26,
+          "seconds": 1.3,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 610,
+          "end": 622,
+          "seconds": 0.6,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2733,
+      "duration_s": 31.1,
+      "keep_s": 29.2,
+      "cut_s": 1.9,
+      "episode_index": 47,
+      "task": null
+    },
+    {
+      "n_frames": 679,
+      "keep": {
+        "start": 21,
+        "end": 651,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 21,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 651,
+          "end": 679,
+          "seconds": 1.4,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3255,
+      "duration_s": 33.95,
+      "keep_s": 31.5,
+      "cut_s": 2.45,
+      "episode_index": 48,
+      "task": null
+    },
+    {
+      "n_frames": 573,
+      "keep": {
+        "start": 15,
+        "end": 573,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 15,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.4066,
+      "duration_s": 28.65,
+      "keep_s": 27.9,
+      "cut_s": 0.75,
+      "episode_index": 49,
+      "task": null
+    },
+    {
+      "n_frames": 454,
+      "keep": {
+        "start": 15,
+        "end": 446,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 15,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 446,
+          "end": 454,
+          "seconds": 0.4,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2665,
+      "duration_s": 22.7,
+      "keep_s": 21.55,
+      "cut_s": 1.15,
+      "episode_index": 50,
+      "task": null
+    },
+    {
+      "n_frames": 433,
+      "keep": {
+        "start": 20,
+        "end": 433,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 20,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2564,
+      "duration_s": 21.65,
+      "keep_s": 20.65,
+      "cut_s": 1.0,
+      "episode_index": 51,
+      "task": null
+    }
+  ]
+}

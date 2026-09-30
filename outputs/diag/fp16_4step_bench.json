@@ -1,0 +1,83 @@
+{
+  "checkpoint_num_steps_on_disk": 10,
+  "timing_ms": {
+    "fp32_10": {
+      "median_ms": 1049.7252270579338,
+      "min_ms": 1032.4282706715167,
+      "max_ms": 1055.2481021732092
+    },
+    "fp32_4": {
+      "median_ms": 540.5585570260882,
+      "min_ms": 527.8827319853008,
+      "max_ms": 547.2599999047816
+    },
+    "fp16_4": {
+      "median_ms": 625.1712492667139,
+      "min_ms": 618.9590422436595,
+      "max_ms": 630.7189520448446
+    }
+  },
+  "vs_fp32_10": [
+    {
+      "frame": 0,
+      "fp32_4": {
+        "joint_mae_deg": 0.15583890676498413,
+        "joint_max_deg": 0.5476808547973633,
+        "gripper_mismatch": 0,
+        "finite": true
+      },
+      "fp16_4": {
+        "joint_mae_deg": 0.15746216475963593,
+        "joint_max_deg": 0.5516352653503418,
+        "gripper_mismatch": 0,
+        "finite": true
+      }
+    },
+    {
+      "frame": 160,
+      "fp32_4": {
+        "joint_mae_deg": 0.10048945993185043,
+        "joint_max_deg": 0.5130192041397095,
+        "gripper_mismatch": 0,
+        "finite": true
+      },
+      "fp16_4": {
+        "joint_mae_deg": 0.10413115471601486,
+        "joint_max_deg": 0.5281186103820801,
+        "gripper_mismatch": 0,
+        "finite": true
+      }
+    },
+    {
+      "frame": 340,
+      "fp32_4": {
+        "joint_mae_deg": 0.09567531943321228,
+        "joint_max_deg": 0.451202929019928,
+        "gripper_mismatch": 0,
+        "finite": true
+      },
+      "fp16_4": {
+        "joint_mae_deg": 0.09366176277399063,
+        "joint_max_deg": 0.45764800906181335,
+        "gripper_mismatch": 0,
+        "finite": true
+      }
+    },
+    {
+      "frame": 560,
+      "fp32_4": {
+        "joint_mae_deg": 0.08808519691228867,
+        "joint_max_deg": 0.298980712890625,
+        "gripper_mismatch": 0,
+        "finite": true
+      },
+      "fp16_4": {
+        "joint_mae_deg": 0.09438493102788925,
+        "joint_max_deg": 0.30283117294311523,
+        "gripper_mismatch": 0,
+        "finite": true
+      }
+    }
+  ],
+  "n_action_steps_compared": 16
+}

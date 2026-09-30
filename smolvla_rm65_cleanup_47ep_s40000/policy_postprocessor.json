@@ -1,0 +1,47 @@
+{
+  "name": "policy_postprocessor",
+  "steps": [
+    {
+      "registry_name": "unnormalizer_processor",
+      "config": {
+        "eps": 1e-08,
+        "features": {
+          "action": {
+            "type": "ACTION",
+            "shape": [
+              7
+            ]
+          }
+        },
+        "norm_map": {
+          "VISUAL": "IDENTITY",
+          "STATE": "MEAN_STD",
+          "ACTION": "MEAN_STD"
+        }
+      },
+      "state_file": "policy_postprocessor_step_0_unnormalizer_processor.safetensors"
+    },
+    {
+      "registry_name": "absolute_actions_processor",
+      "config": {
+        "enabled": true
+      }
+    },
+    {
+      "registry_name": "gripper_hysteresis_processor",
+      "config": {
+        "gripper_dim": 6,
+        "low": 0.35,
+        "high": 0.65,
+        "initial_threshold": 0.5
+      }
+    },
+    {
+      "registry_name": "device_processor",
+      "config": {
+        "device": "cpu",
+        "float_dtype": null
+      }
+    }
+  ]
+}

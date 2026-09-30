@@ -1,0 +1,4220 @@
+{
+  "schema": "rm65/subtask_plan/v1",
+  "dataset": "rm65_place_to_slot",
+  "overall": "Place three objects into matching slots on the silver card.",
+  "subtasks": [
+    "Rotate the gripper and grasp the cylinder.",
+    "Lift and rotate the cylinder to align with the round slot.",
+    "Insert into the round slot and release.",
+    "Rotate the gripper and grasp the T-shaped wooden block.",
+    "Lift and rotate the T-shaped wooden block to align with the T-shaped slot.",
+    "Insert into the T-shaped slot and release.",
+    "Rotate the gripper and grasp the blue box.",
+    "Lift and rotate the blue box to align with the rectangular slot.",
+    "Insert into the rectangular slot and release."
+  ],
+  "train_string": "{overall} {subtask}",
+  "fps": 20.0,
+  "episodes": [
+    {
+      "episode_index": 0,
+      "n_frames": 1611,
+      "windows": [
+        {
+          "start": 0,
+          "end": 161,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 161,
+          "end": 181,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 181,
+          "end": 324,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 324,
+          "end": 519,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 519,
+          "end": 773,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 773,
+          "end": 891,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 891,
+          "end": 1262,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1262,
+          "end": 1437,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1437,
+          "end": 1579,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1579,
+          "end": 1611,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 1,
+      "n_frames": 1399,
+      "windows": [
+        {
+          "start": 0,
+          "end": 145,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 145,
+          "end": 165,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 165,
+          "end": 232,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 232,
+          "end": 465,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 465,
+          "end": 639,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 639,
+          "end": 779,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 779,
+          "end": 1062,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1062,
+          "end": 1225,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1225,
+          "end": 1365,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1365,
+          "end": 1399,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 2,
+      "n_frames": 1762,
+      "windows": [
+        {
+          "start": 0,
+          "end": 82,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 82,
+          "end": 102,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 102,
+          "end": 210,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 210,
+          "end": 581,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 581,
+          "end": 829,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 829,
+          "end": 991,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 991,
+          "end": 1320,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1320,
+          "end": 1567,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1567,
+          "end": 1716,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1716,
+          "end": 1762,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 3,
+      "n_frames": 1439,
+      "windows": [
+        {
+          "start": 0,
+          "end": 142,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 142,
+          "end": 228,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 228,
+          "end": 343,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 343,
+          "end": 602,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 602,
+          "end": 737,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 737,
+          "end": 848,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 848,
+          "end": 1136,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1136,
+          "end": 1265,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1265,
+          "end": 1391,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1391,
+          "end": 1439,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 4,
+      "n_frames": 1476,
+      "windows": [
+        {
+          "start": 0,
+          "end": 115,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 115,
+          "end": 189,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 189,
+          "end": 352,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 352,
+          "end": 601,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 601,
+          "end": 784,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 784,
+          "end": 921,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 921,
+          "end": 1172,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1172,
+          "end": 1343,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1343,
+          "end": 1445,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1445,
+          "end": 1476,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 5,
+      "n_frames": 1563,
+      "windows": [
+        {
+          "start": 0,
+          "end": 129,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 129,
+          "end": 149,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 149,
+          "end": 283,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 283,
+          "end": 534,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 534,
+          "end": 681,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 681,
+          "end": 796,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 796,
+          "end": 1149,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1149,
+          "end": 1314,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1314,
+          "end": 1522,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1522,
+          "end": 1563,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 6,
+      "n_frames": 1807,
+      "windows": [
+        {
+          "start": 0,
+          "end": 255,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 255,
+          "end": 432,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 432,
+          "end": 532,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 532,
+          "end": 907,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 907,
+          "end": 1068,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 1068,
+          "end": 1201,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1201,
+          "end": 1442,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1442,
+          "end": 1648,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1648,
+          "end": 1794,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1794,
+          "end": 1807,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 7,
+      "n_frames": 1556,
+      "windows": [
+        {
+          "start": 0,
+          "end": 216,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 216,
+          "end": 355,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 355,
+          "end": 516,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 516,
+          "end": 756,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 756,
+          "end": 944,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 944,
+          "end": 1057,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1057,
+          "end": 1282,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1282,
+          "end": 1414,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1414,
+          "end": 1517,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1517,
+          "end": 1556,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 8,
+      "n_frames": 1838,
+      "windows": [
+        {
+          "start": 0,
+          "end": 258,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 258,
+          "end": 464,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 464,
+          "end": 553,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 553,
+          "end": 820,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 820,
+          "end": 1008,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 1008,
+          "end": 1124,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1124,
+          "end": 1401,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1401,
+          "end": 1625,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1625,
+          "end": 1797,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1797,
+          "end": 1838,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 9,
+      "n_frames": 1589,
+      "windows": [
+        {
+          "start": 0,
+          "end": 143,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 143,
+          "end": 163,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 163,
+          "end": 314,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 314,
+          "end": 586,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 586,
+          "end": 878,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 878,
+          "end": 1006,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1006,
+          "end": 1253,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1253,
+          "end": 1424,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1424,
+          "end": 1519,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1519,
+          "end": 1589,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 10,
+      "n_frames": 1638,
+      "windows": [
+        {
+          "start": 0,
+          "end": 268,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 268,
+          "end": 495,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 495,
+          "end": 670,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 670,
+          "end": 923,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 923,
+          "end": 1106,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 1106,
+          "end": 1270,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1270,
+          "end": 1477,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1477,
+          "end": 1533,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1533,
+          "end": 1580,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1580,
+          "end": 1638,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 11,
+      "n_frames": 1628,
+      "windows": [
+        {
+          "start": 0,
+          "end": 139,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 139,
+          "end": 283,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 283,
+          "end": 445,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 445,
+          "end": 724,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 724,
+          "end": 893,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 893,
+          "end": 1051,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1051,
+          "end": 1305,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1305,
+          "end": 1502,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1502,
+          "end": 1628,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 12,
+      "n_frames": 1692,
+      "windows": [
+        {
+          "start": 0,
+          "end": 288,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 288,
+          "end": 493,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 493,
+          "end": 644,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 644,
+          "end": 936,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 936,
+          "end": 1205,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 1205,
+          "end": 1341,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1341,
+          "end": 1498,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1498,
+          "end": 1587,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1587,
+          "end": 1651,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1651,
+          "end": 1692,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 13,
+      "n_frames": 1517,
+      "windows": [
+        {
+          "start": 0,
+          "end": 211,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 211,
+          "end": 376,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 376,
+          "end": 520,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 520,
+          "end": 768,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 768,
+          "end": 989,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 989,
+          "end": 1164,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1164,
+          "end": 1328,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1328,
+          "end": 1384,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1384,
+          "end": 1454,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1454,
+          "end": 1517,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 14,
+      "n_frames": 1623,
+      "windows": [
+        {
+          "start": 0,
+          "end": 187,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 187,
+          "end": 360,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 360,
+          "end": 450,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 450,
+          "end": 758,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 758,
+          "end": 1006,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 1006,
+          "end": 1177,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1177,
+          "end": 1422,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1422,
+          "end": 1547,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1547,
+          "end": 1623,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 15,
+      "n_frames": 1659,
+      "windows": [
+        {
+          "start": 0,
+          "end": 199,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 199,
+          "end": 343,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 343,
+          "end": 465,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 465,
+          "end": 708,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 708,
+          "end": 893,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 893,
+          "end": 998,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 998,
+          "end": 1325,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1325,
+          "end": 1485,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1485,
+          "end": 1610,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1610,
+          "end": 1659,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 16,
+      "n_frames": 1556,
+      "windows": [
+        {
+          "start": 0,
+          "end": 101,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 101,
+          "end": 121,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 121,
+          "end": 305,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 305,
+          "end": 521,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 521,
+          "end": 707,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 707,
+          "end": 786,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 786,
+          "end": 1149,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1149,
+          "end": 1325,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1325,
+          "end": 1511,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1511,
+          "end": 1556,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 17,
+      "n_frames": 1349,
+      "windows": [
+        {
+          "start": 0,
+          "end": 110,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 110,
+          "end": 190,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 190,
+          "end": 265,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 265,
+          "end": 493,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 493,
+          "end": 665,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 665,
+          "end": 770,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 770,
+          "end": 1058,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1058,
+          "end": 1222,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1222,
+          "end": 1307,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1307,
+          "end": 1349,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 18,
+      "n_frames": 1443,
+      "windows": [
+        {
+          "start": 0,
+          "end": 111,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 111,
+          "end": 131,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 131,
+          "end": 272,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 272,
+          "end": 537,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 537,
+          "end": 720,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 720,
+          "end": 814,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 814,
+          "end": 1113,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1113,
+          "end": 1278,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1278,
+          "end": 1402,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1402,
+          "end": 1443,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 19,
+      "n_frames": 1571,
+      "windows": [
+        {
+          "start": 0,
+          "end": 253,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 253,
+          "end": 411,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 411,
+          "end": 600,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 600,
+          "end": 813,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 813,
+          "end": 1002,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 1002,
+          "end": 1133,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1133,
+          "end": 1309,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1309,
+          "end": 1428,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1428,
+          "end": 1530,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1530,
+          "end": 1571,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 20,
+      "n_frames": 1491,
+      "windows": [
+        {
+          "start": 0,
+          "end": 184,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 184,
+          "end": 204,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 204,
+          "end": 364,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 364,
+          "end": 629,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 629,
+          "end": 843,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 843,
+          "end": 962,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 962,
+          "end": 1212,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1212,
+          "end": 1343,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1343,
+          "end": 1420,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1420,
+          "end": 1491,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 21,
+      "n_frames": 1506,
+      "windows": [
+        {
+          "start": 0,
+          "end": 124,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 124,
+          "end": 200,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 200,
+          "end": 312,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 312,
+          "end": 521,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 521,
+          "end": 727,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 727,
+          "end": 834,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 834,
+          "end": 1155,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1155,
+          "end": 1343,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1343,
+          "end": 1454,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1454,
+          "end": 1506,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 22,
+      "n_frames": 1501,
+      "windows": [
+        {
+          "start": 0,
+          "end": 98,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 98,
+          "end": 118,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 118,
+          "end": 199,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 199,
+          "end": 463,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 463,
+          "end": 700,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 700,
+          "end": 828,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 828,
+          "end": 1148,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1148,
+          "end": 1344,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1344,
+          "end": 1460,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1460,
+          "end": 1501,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 23,
+      "n_frames": 1353,
+      "windows": [
+        {
+          "start": 0,
+          "end": 88,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 88,
+          "end": 158,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 158,
+          "end": 206,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 206,
+          "end": 486,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 486,
+          "end": 690,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 690,
+          "end": 785,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 785,
+          "end": 1035,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1035,
+          "end": 1177,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1177,
+          "end": 1312,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1312,
+          "end": 1353,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 24,
+      "n_frames": 1450,
+      "windows": [
+        {
+          "start": 0,
+          "end": 87,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 87,
+          "end": 107,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 107,
+          "end": 227,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 227,
+          "end": 471,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 471,
+          "end": 698,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 698,
+          "end": 807,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 807,
+          "end": 1116,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1116,
+          "end": 1277,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1277,
+          "end": 1409,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1409,
+          "end": 1450,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 25,
+      "n_frames": 1719,
+      "windows": [
+        {
+          "start": 0,
+          "end": 344,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 344,
+          "end": 542,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 542,
+          "end": 659,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 659,
+          "end": 968,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 968,
+          "end": 1166,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 1166,
+          "end": 1298,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1298,
+          "end": 1487,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1487,
+          "end": 1595,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1595,
+          "end": 1678,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1678,
+          "end": 1719,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 26,
+      "n_frames": 1495,
+      "windows": [
+        {
+          "start": 0,
+          "end": 183,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 183,
+          "end": 203,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 203,
+          "end": 278,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 278,
+          "end": 638,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 638,
+          "end": 875,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 875,
+          "end": 1018,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1018,
+          "end": 1287,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1287,
+          "end": 1386,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1386,
+          "end": 1437,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1437,
+          "end": 1495,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 27,
+      "n_frames": 1439,
+      "windows": [
+        {
+          "start": 0,
+          "end": 84,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 84,
+          "end": 104,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 104,
+          "end": 177,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 177,
+          "end": 440,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 440,
+          "end": 601,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 601,
+          "end": 740,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 740,
+          "end": 1074,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1074,
+          "end": 1234,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1234,
+          "end": 1398,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1398,
+          "end": 1439,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 28,
+      "n_frames": 324,
+      "windows": [
+        {
+          "start": 0,
+          "end": 95,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 95,
+          "end": 199,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 199,
+          "end": 282,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 282,
+          "end": 324,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 29,
+      "n_frames": 1139,
+      "windows": [
+        {
+          "start": 0,
+          "end": 123,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 123,
+          "end": 143,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 143,
+          "end": 249,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 249,
+          "end": 449,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 449,
+          "end": 633,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 633,
+          "end": 666,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 666,
+          "end": 858,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 858,
+          "end": 1002,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1002,
+          "end": 1095,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1095,
+          "end": 1139,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 30,
+      "n_frames": 960,
+      "windows": [
+        {
+          "start": 0,
+          "end": 95,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 95,
+          "end": 115,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 115,
+          "end": 146,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 146,
+          "end": 295,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 295,
+          "end": 315,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 315,
+          "end": 333,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 333,
+          "end": 380,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 380,
+          "end": 393,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 393,
+          "end": 408,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 408,
+          "end": 463,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 463,
+          "end": 574,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 574,
+          "end": 649,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 649,
+          "end": 818,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 818,
+          "end": 888,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 888,
+          "end": 916,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 916,
+          "end": 960,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 31,
+      "n_frames": 1236,
+      "windows": [
+        {
+          "start": 0,
+          "end": 196,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 196,
+          "end": 216,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 216,
+          "end": 279,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 279,
+          "end": 448,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 448,
+          "end": 573,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 573,
+          "end": 667,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 667,
+          "end": 978,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 978,
+          "end": 1126,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1126,
+          "end": 1190,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1190,
+          "end": 1236,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 32,
+      "n_frames": 1239,
+      "windows": [
+        {
+          "start": 0,
+          "end": 197,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 197,
+          "end": 217,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 217,
+          "end": 334,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 334,
+          "end": 638,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 638,
+          "end": 768,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 768,
+          "end": 825,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 825,
+          "end": 1006,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1006,
+          "end": 1100,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1100,
+          "end": 1187,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1187,
+          "end": 1239,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 33,
+      "n_frames": 1362,
+      "windows": [
+        {
+          "start": 0,
+          "end": 133,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 133,
+          "end": 200,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 200,
+          "end": 328,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 328,
+          "end": 618,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 618,
+          "end": 799,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 799,
+          "end": 902,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 902,
+          "end": 1067,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1067,
+          "end": 1204,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1204,
+          "end": 1313,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1313,
+          "end": 1362,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 34,
+      "n_frames": 1648,
+      "windows": [
+        {
+          "start": 0,
+          "end": 302,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 302,
+          "end": 495,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 495,
+          "end": 585,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 585,
+          "end": 843,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 843,
+          "end": 856,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 856,
+          "end": 871,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 871,
+          "end": 962,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 962,
+          "end": 1072,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1072,
+          "end": 1171,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1171,
+          "end": 1387,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1387,
+          "end": 1502,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1502,
+          "end": 1607,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1607,
+          "end": 1648,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 35,
+      "n_frames": 1120,
+      "windows": [
+        {
+          "start": 0,
+          "end": 199,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 199,
+          "end": 219,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 219,
+          "end": 298,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 298,
+          "end": 516,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 516,
+          "end": 673,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 673,
+          "end": 763,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 763,
+          "end": 941,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 941,
+          "end": 1022,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1022,
+          "end": 1074,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1074,
+          "end": 1120,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 36,
+      "n_frames": 1297,
+      "windows": [
+        {
+          "start": 0,
+          "end": 242,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 242,
+          "end": 427,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 427,
+          "end": 550,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 550,
+          "end": 707,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 707,
+          "end": 838,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 838,
+          "end": 918,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 918,
+          "end": 1094,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1094,
+          "end": 1196,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1196,
+          "end": 1256,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1256,
+          "end": 1297,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 37,
+      "n_frames": 1365,
+      "windows": [
+        {
+          "start": 0,
+          "end": 192,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 192,
+          "end": 326,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 326,
+          "end": 382,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 382,
+          "end": 538,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 538,
+          "end": 675,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 675,
+          "end": 769,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 769,
+          "end": 805,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 805,
+          "end": 818,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 818,
+          "end": 833,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 833,
+          "end": 867,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 867,
+          "end": 887,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 887,
+          "end": 944,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 944,
+          "end": 1149,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1149,
+          "end": 1284,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1284,
+          "end": 1331,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1331,
+          "end": 1365,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 38,
+      "n_frames": 1689,
+      "windows": [
+        {
+          "start": 0,
+          "end": 264,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 264,
+          "end": 510,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 510,
+          "end": 589,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 589,
+          "end": 928,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 928,
+          "end": 948,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 948,
+          "end": 967,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 967,
+          "end": 1059,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1059,
+          "end": 1310,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1310,
+          "end": 1416,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1416,
+          "end": 1560,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1560,
+          "end": 1580,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1580,
+          "end": 1646,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1646,
+          "end": 1689,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 39,
+      "n_frames": 1233,
+      "windows": [
+        {
+          "start": 0,
+          "end": 267,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 267,
+          "end": 439,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 439,
+          "end": 507,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 507,
+          "end": 687,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 687,
+          "end": 835,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 835,
+          "end": 911,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 911,
+          "end": 1075,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1075,
+          "end": 1153,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1153,
+          "end": 1194,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1194,
+          "end": 1233,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 40,
+      "n_frames": 1374,
+      "windows": [
+        {
+          "start": 0,
+          "end": 153,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 153,
+          "end": 275,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 275,
+          "end": 332,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 332,
+          "end": 586,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 586,
+          "end": 775,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 775,
+          "end": 910,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 910,
+          "end": 1079,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1079,
+          "end": 1219,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1219,
+          "end": 1323,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1323,
+          "end": 1374,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 41,
+      "n_frames": 1203,
+      "windows": [
+        {
+          "start": 0,
+          "end": 245,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 245,
+          "end": 417,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 417,
+          "end": 484,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 484,
+          "end": 689,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 689,
+          "end": 806,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 806,
+          "end": 882,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 882,
+          "end": 992,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 992,
+          "end": 1079,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1079,
+          "end": 1154,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1154,
+          "end": 1203,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 42,
+      "n_frames": 1065,
+      "windows": [
+        {
+          "start": 0,
+          "end": 92,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 92,
+          "end": 160,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 160,
+          "end": 272,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 272,
+          "end": 490,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 490,
+          "end": 680,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 680,
+          "end": 802,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 802,
+          "end": 902,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 902,
+          "end": 977,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 977,
+          "end": 1023,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1023,
+          "end": 1065,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 43,
+      "n_frames": 1311,
+      "windows": [
+        {
+          "start": 0,
+          "end": 187,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 187,
+          "end": 207,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 207,
+          "end": 381,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 381,
+          "end": 690,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 690,
+          "end": 820,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 820,
+          "end": 935,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 935,
+          "end": 1078,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1078,
+          "end": 1166,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1166,
+          "end": 1261,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1261,
+          "end": 1311,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 44,
+      "n_frames": 1477,
+      "windows": [
+        {
+          "start": 0,
+          "end": 268,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 268,
+          "end": 480,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 480,
+          "end": 604,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 604,
+          "end": 796,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 796,
+          "end": 932,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 932,
+          "end": 1009,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1009,
+          "end": 1198,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1198,
+          "end": 1337,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1337,
+          "end": 1435,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1435,
+          "end": 1477,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 45,
+      "n_frames": 1462,
+      "windows": [
+        {
+          "start": 0,
+          "end": 255,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 255,
+          "end": 435,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 435,
+          "end": 525,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 525,
+          "end": 795,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 795,
+          "end": 980,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 980,
+          "end": 1084,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1084,
+          "end": 1255,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1255,
+          "end": 1342,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1342,
+          "end": 1420,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1420,
+          "end": 1462,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 46,
+      "n_frames": 1134,
+      "windows": [
+        {
+          "start": 0,
+          "end": 67,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 67,
+          "end": 87,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 87,
+          "end": 181,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 181,
+          "end": 308,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 308,
+          "end": 409,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 409,
+          "end": 479,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 479,
+          "end": 531,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 531,
+          "end": 551,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 551,
+          "end": 587,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 587,
+          "end": 849,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 849,
+          "end": 987,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 987,
+          "end": 1092,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1092,
+          "end": 1134,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 47,
+      "n_frames": 1445,
+      "windows": [
+        {
+          "start": 0,
+          "end": 258,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 258,
+          "end": 445,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 445,
+          "end": 566,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 566,
+          "end": 799,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 799,
+          "end": 948,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 948,
+          "end": 1041,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1041,
+          "end": 1238,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1238,
+          "end": 1341,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1341,
+          "end": 1399,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1399,
+          "end": 1445,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 48,
+      "n_frames": 966,
+      "windows": [
+        {
+          "start": 0,
+          "end": 76,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 76,
+          "end": 96,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 96,
+          "end": 180,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 180,
+          "end": 389,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 389,
+          "end": 559,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 559,
+          "end": 631,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 631,
+          "end": 797,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 797,
+          "end": 870,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 870,
+          "end": 925,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 925,
+          "end": 966,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 49,
+      "n_frames": 1502,
+      "windows": [
+        {
+          "start": 0,
+          "end": 196,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 196,
+          "end": 373,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 373,
+          "end": 490,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 490,
+          "end": 737,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 737,
+          "end": 904,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 904,
+          "end": 1027,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 1027,
+          "end": 1211,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1211,
+          "end": 1343,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1343,
+          "end": 1457,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1457,
+          "end": 1502,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 50,
+      "n_frames": 1298,
+      "windows": [
+        {
+          "start": 0,
+          "end": 88,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 88,
+          "end": 108,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 108,
+          "end": 191,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 191,
+          "end": 484,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 484,
+          "end": 711,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 711,
+          "end": 911,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 911,
+          "end": 1097,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1097,
+          "end": 1206,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1206,
+          "end": 1259,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1259,
+          "end": 1298,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    },
+    {
+      "episode_index": 51,
+      "n_frames": 1320,
+      "windows": [
+        {
+          "start": 0,
+          "end": 95,
+          "local_index": 0,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the cylinder."
+        },
+        {
+          "start": 95,
+          "end": 115,
+          "local_index": 1,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the cylinder to align with the round slot."
+        },
+        {
+          "start": 115,
+          "end": 154,
+          "local_index": 2,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the round slot and release."
+        },
+        {
+          "start": 154,
+          "end": 373,
+          "local_index": 3,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the T-shaped wooden block."
+        },
+        {
+          "start": 373,
+          "end": 488,
+          "local_index": 4,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the T-shaped wooden block to align with the T-shaped slot."
+        },
+        {
+          "start": 488,
+          "end": 564,
+          "local_index": 5,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the T-shaped slot and release."
+        },
+        {
+          "start": 564,
+          "end": 608,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 608,
+          "end": 628,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 628,
+          "end": 657,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 657,
+          "end": 718,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 718,
+          "end": 738,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 738,
+          "end": 758,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 758,
+          "end": 790,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 790,
+          "end": 804,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 804,
+          "end": 820,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 820,
+          "end": 843,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 843,
+          "end": 852,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 852,
+          "end": 864,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 864,
+          "end": 890,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 890,
+          "end": 910,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 910,
+          "end": 949,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 949,
+          "end": 1146,
+          "local_index": 6,
+          "kind": "grasp",
+          "task": "Place three objects into matching slots on the silver card. Rotate the gripper and grasp the blue box."
+        },
+        {
+          "start": 1146,
+          "end": 1232,
+          "local_index": 7,
+          "kind": "align",
+          "task": "Place three objects into matching slots on the silver card. Lift and rotate the blue box to align with the rectangular slot."
+        },
+        {
+          "start": 1232,
+          "end": 1277,
+          "local_index": 8,
+          "kind": "insert",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        },
+        {
+          "start": 1277,
+          "end": 1320,
+          "local_index": 8,
+          "kind": "tail",
+          "task": "Place three objects into matching slots on the silver card. Insert into the rectangular slot and release."
+        }
+      ],
+      "failed": false
+    }
+  ]
+}

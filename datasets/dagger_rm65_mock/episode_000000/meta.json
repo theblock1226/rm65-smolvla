@@ -1,0 +1,21 @@
+{
+  "task": "Stack three cylinder blocks.",
+  "n_frames": 3,
+  "n_intervention": 3,
+  "n_autonomous": 0,
+  "sources": [
+    "HUMAN",
+    "HUMAN",
+    "HUMAN"
+  ],
+  "joint_keys": [
+    "left_joint_1.pos",
+    "left_joint_2.pos",
+    "left_joint_3.pos",
+    "left_joint_4.pos",
+    "left_joint_5.pos",
+    "left_joint_6.pos",
+    "left_gripper.pos"
+  ],
+  "format": "dagger_rm65_episode_v1"
+}

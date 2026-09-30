@@ -1,0 +1,19 @@
+{
+  "n_episodes": 3,
+  "n_frames": 9,
+  "n_intervention_frames": 9,
+  "n_autonomous_frames": 0,
+  "tasks": [
+    "Stack three cylinder blocks."
+  ],
+  "sources_seen": [
+    "HUMAN",
+    "VLA"
+  ],
+  "corrections_only": true,
+  "backend": "mock",
+  "pass_has_human": true,
+  "pass_saved_episodes": true,
+  "pass_intervention_frames": true,
+  "pass": true
+}

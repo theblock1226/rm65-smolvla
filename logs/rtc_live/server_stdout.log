@@ -1,0 +1,43 @@
+INFO 2026-09-30 08:00:17 y_server.py:534 {'fps': 20,
+ 'host': '127.0.0.1',
+ 'inference_latency': 0.03333333333333333,
+ 'obs_queue_timeout': 2,
+ 'port': 8080}
+INFO 2026-09-30 08:00:17 y_server.py:546 PolicyServer started on 127.0.0.1:8080
+INFO 2026-09-30 08:00:37 y_server.py:110 Client ipv4:127.0.0.1:51608 connected and ready
+INFO 2026-09-30 08:00:37 y_server.py:138 Receiving policy instructions from ipv4:127.0.0.1:51608 | Policy type: smolvla | Pretrained name or path: /home/sdznkj/zkx_ws/sendlerobot/smolvla_rm65_stack_30ep_s1000 | Actions per chunk: 24 | Device: cuda
+INFO 2026-09-30 08:00:37 m65_ckpt.py:129 ckpt sanitize: %s
+Loading  /home/sdznkj/zkx_ws/sendlerobot/base_models/SmolVLM2-500M-Video-Instruct weights ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 110/489 [00:00<00:00, 1094.73it/s]Loading weights:  45%|████▍     | 220/489 [00:00<00:00, 1010.35it/s]Loading weights:  66%|██████▌   | 323/489 [00:00<00:00, 1012.13it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 1188.73it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+INFO 2026-09-30 08:00:48 /rm65_rtc.py:58 RTC on: num_steps=%s horizon=%s chunk=%s relative=%s
+INFO 2026-09-30 08:00:48 y_server.py:185 policy loaded and put on device (%.2fs)
+INFO 2026-09-30 08:00:48 ort/utils.py:74 <Logger policy_server (INFO)> Starting receiver
+INFO 2026-09-30 08:00:48 y_server.py:220 Received observation #0 | Avg FPS: 0.00 | Target: 20.00 | One-way latency: 3.54ms
+INFO 2026-09-30 08:00:48 y_server.py:364 successfully enqueued observation
+INFO 2026-09-30 08:00:48 y_server.py:253 Running inference for observation #0 (must_go: True)
+INFO 2026-09-30 08:00:49 y_server.py:480 grip_chunk t=0 n=24 first=1.000 last=1.000 mean=1.000 min=1.000 max=1.000 edges(>0.5)=0 head=[1.,1.,1.,1.,1.,1.,1.,1.,1.,1.,1.,1.]
+INFO 2026-09-30 08:00:49 y_server.py:505 Observation 0 |Inference time: 1107.51ms
+INFO 2026-09-30 08:00:49 y_server.py:276 Action chunk #0 generated | Total time: 1112.42ms
+INFO 2026-09-30 08:00:49 ort/utils.py:74 <Logger policy_server (INFO)> Starting receiver
+INFO 2026-09-30 08:00:49 y_server.py:220 Received observation #6 | Avg FPS: 0.71 | Target: 20.00 | One-way latency: 4.99ms
+INFO 2026-09-30 08:00:49 y_server.py:364 successfully enqueued observation
+INFO 2026-09-30 08:00:49 y_server.py:253 Running inference for observation #6 (must_go: True)
+INFO 2026-09-30 08:00:49 y_server.py:429 RTC guide delay=%s horizon=%s leftover=%s
+INFO 2026-09-30 08:00:50 y_server.py:480 grip_chunk t=6 n=24 first=1.000 last=1.000 mean=1.000 min=1.000 max=1.000 edges(>0.5)=0 head=[1.,1.,1.,1.,1.,1.,1.,1.,1.,1.,1.,1.]
+INFO 2026-09-30 08:00:50 y_server.py:505 Observation 6 |Inference time: 690.07ms
+INFO 2026-09-30 08:00:50 y_server.py:276 Action chunk #6 generated | Total time: 693.84ms
+INFO 2026-09-30 08:00:50 ort/utils.py:74 <Logger policy_server (INFO)> Starting receiver
+INFO 2026-09-30 08:00:50 y_server.py:220 Received observation #21 | Avg FPS: 0.93 | Target: 20.00 | One-way latency: 3.35ms
+INFO 2026-09-30 08:00:50 y_server.py:364 successfully enqueued observation
+INFO 2026-09-30 08:00:50 y_server.py:253 Running inference for observation #21 (must_go: True)
+INFO 2026-09-30 08:00:50 y_server.py:429 RTC guide delay=%s horizon=%s leftover=%s
+INFO 2026-09-30 08:00:51 y_server.py:480 grip_chunk t=21 n=24 first=1.000 last=1.000 mean=1.000 min=1.000 max=1.000 edges(>0.5)=0 head=[1.,1.,1.,1.,1.,1.,1.,1.,1.,1.,1.,1.]
+INFO 2026-09-30 08:00:51 y_server.py:505 Observation 21 |Inference time: 554.17ms
+INFO 2026-09-30 08:00:51 y_server.py:276 Action chunk #21 generated | Total time: 558.24ms
+INFO 2026-09-30 08:00:51 ort/utils.py:74 <Logger policy_server (INFO)> Starting receiver
+INFO 2026-09-30 08:00:51 y_server.py:220 Received observation #32 | Avg FPS: 1.07 | Target: 20.00 | One-way latency: 3.78ms
+INFO 2026-09-30 08:00:51 y_server.py:364 successfully enqueued observation
+INFO 2026-09-30 08:00:51 y_ser

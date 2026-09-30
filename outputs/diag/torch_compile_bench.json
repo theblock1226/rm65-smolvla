@@ -1,0 +1,18 @@
+{
+  "original_num_steps": 10,
+  "eager_4_median_ms": 531.7291589453816,
+  "inductor": {
+    "ok": false,
+    "error": "TritonMissing: Cannot find a working triton installation. Either the package is not installed or it is too old. More information on installing Triton can be found at: https://github.com/triton-lang/triton"
+  },
+  "cudagraphs": {
+    "ok": true,
+    "first_call_s": 43.04665197990835,
+    "median_ms": 1191.603846848011,
+    "min_ms": 1165.2008388191462,
+    "max_ms": 1389.6295712329447,
+    "joint_mae_vs_eager_deg": 0.0,
+    "joint_max_vs_eager_deg": 0.0,
+    "finite": true
+  }
+}

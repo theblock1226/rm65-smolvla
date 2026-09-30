@@ -1,0 +1,49 @@
+{
+  "schema": "sendi/clean_report/v1",
+  "embodiment_id": "rm65_dahuan",
+  "robot_type": "rm65_movep",
+  "codebase_version": "v2.1",
+  "fps": 20,
+  "cameras": {
+    "observation.images.front": {
+      "role": "wrist_or_front",
+      "width": 640,
+      "height": 480
+    },
+    "observation.images.mono": {
+      "role": "mono_rtsp",
+      "width": 640,
+      "height": 480
+    }
+  },
+  "state_names": [
+    "left_joint_1.pos",
+    "left_joint_2.pos",
+    "left_joint_3.pos",
+    "left_joint_4.pos",
+    "left_joint_5.pos",
+    "left_joint_6.pos",
+    "left_gripper.pos"
+  ],
+  "action_names": [
+    "left_joint_1.pos",
+    "left_joint_2.pos",
+    "left_joint_3.pos",
+    "left_joint_4.pos",
+    "left_joint_5.pos",
+    "left_joint_6.pos",
+    "left_gripper.pos"
+  ],
+  "action_semantics": "ik_target_from_movep_teleop",
+  "observation_semantics": "sdk_measured_joints_deg",
+  "total_episodes": 200,
+  "total_frames": 94944,
+  "total_tasks": 4,
+  "splits": {
+    "train": "0:4,5:200",
+    "failed": "4:5"
+  },
+  "language": "overall + current subtask in meta/tasks.jsonl; per-frame task_index",
+  "updated_at": "2026-09-21T17:21:34+08:00",
+  "notes": "cleaned trim + 10-frame mono shift on USB + subtask language for SmolVLA SFT"
+}

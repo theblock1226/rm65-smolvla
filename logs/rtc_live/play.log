@@ -1,0 +1,6 @@
+[INFO] [1790755210.443556414] [play_action_rm65]: play_action_rm65 ready | max_step=0.4° speed_scale=0.3 → movej_canfd
+[INFO] [1790755249.590267735] [play_action_rm65]: follow pubs=1 clips=0 step≈0.120° scale=0.3 cmd=[-155.5, -90.2, 50.9, 148.6, -122.7, -19.6]
+[INFO] [1790755250.639669356] [play_action_rm65]: follow pubs=22 clips=0 step≈0.041° scale=0.3 cmd=[-156.2, -90.6, 51.2, 149.0, -122.3, -19.3]
+[INFO] [1790755251.644493216] [play_action_rm65]: follow pubs=40 clips=0 step≈0.058° scale=0.3 cmd=[-157.1, -91.3, 52.0, 149.7, -121.8, -18.7]
+[INFO] [1790755252.745873593] [play_action_rm65]: follow pubs=57 clips=0 step≈0.061° scale=0.3 cmd=[-158.1, -92.2, 52.9, 150.7, -121.0, -18.1]
+[INFO] [1790755253.747145359] [play_action_rm65]: follow pubs=77 clips=0 step≈0.069° scale=0.3 cmd=[-159.5, -93.5, 54.3, 152.0, -119.7, -17.0]

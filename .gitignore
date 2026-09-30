@@ -1,0 +1,44 @@
+# Git / IDE
+.git/
+.vscode/
+.devcontainer/
+.DS_Store
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+wandb/
+logs/tmp/
+*.key
+.env
+.env.*
+*.token
+
+# Never commit secrets or credentials
+**/credentials*
+**/*secret*
+ghp_*
+hf_*
+
+# Large binaries belong on Hugging Face (see README naming table)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.mp4
+*.avi
+*.mkv
+base_models/
+checkpoints/
+datasets/cleaned/*/videos/
+datasets/cleaned/*/data/
+datasets/dagger_rm65_20*/
+third_party/vla-perf/
+outputs/diag/smolvla_rm65_*_backup/
+outputs/diag/smolvla_rm65_*_fp16/
+outputs/diag/stack_30ep_offline/ep000_live/

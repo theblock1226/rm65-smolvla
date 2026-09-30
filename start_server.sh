@@ -1,0 +1,1 @@
+python3 lerobot/scripts/server/policy_server.py --host=127.0.0.1 --port=8080

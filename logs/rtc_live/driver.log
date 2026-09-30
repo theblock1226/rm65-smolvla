@@ -1,0 +1,7 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-09-30-07-59-14-377214-sdznkj-89
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [rm_driver-1]: process started with pid [90]
+[rm_driver-1] [INFO] [1790755156.595994518] [rm_driver]: RM_65_driver is running 
+[rm_driver-1] [INFO] [1790755159.680065139] [rm_driver]: product_version = RM65-BI
+[rm_driver-1] [INFO] [1790755159.781026865] [rm_driver]: The error code is 1
+[rm_driver-1] 

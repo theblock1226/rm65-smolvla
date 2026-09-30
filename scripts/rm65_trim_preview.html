@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>裁剪预览</title>
+<style>
+:root { --bg:#111; --panel:#1c1c1c; --line:#333; --txt:#eee; --muted:#9aa; --cut:#e55; --opt:#e6a23c; --keep:#3a3; --jump:#5ac8fa; --rot:#c46cff; --play:#fff; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: ui-sans-serif, system-ui, sans-serif; background:var(--bg); color:var(--txt); }
+header { padding:12px 16px; border-bottom:1px solid var(--line); }
+header h1 { margin:0 0 6px; font-size:18px; }
+header p { margin:0; color:var(--muted); font-size:13px; }
+code { color:#cde; }
+.layout { display:grid; grid-template-columns: 240px 1fr; min-height: calc(100vh - 70px); }
+.list { border-right:1px solid var(--line); overflow:auto; max-height: calc(100vh - 70px); }
+.item { padding:8px 12px; cursor:pointer; border-bottom:1px solid #222; }
+.item:hover { background:#222; }
+.item.on { background:#2a2a40; }
+.item .id { font-weight:700; }
+.item .meta { color:var(--muted); font-size:12px; }
+.main { padding:12px 16px 24px; }
+.videos { display:flex; gap:10px; flex-wrap:wrap; }
+video { width: min(480px, 48%); background:#000; border-radius:6px; }
+.row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin:10px 0; }
+button { background:#2b2b2b; color:var(--txt); border:1px solid #555; padding:6px 10px; border-radius:6px; cursor:pointer; }
+button:hover { background:#3a3a3a; }
+button.pri { background:#3d5afe; border-color:#3d5afe; }
+.legend span { display:inline-flex; align-items:center; gap:6px; margin-right:12px; font-size:12px; color:var(--muted); }
+.sw { width:12px; height:12px; border-radius:2px; display:inline-block; }
+.sw.keep { background:var(--keep); }
+.sw.cut { background:var(--cut); }
+.sw.opt { background:var(--opt); }
+.sw.jump { background:var(--jump); }
+.sw.rot { background:var(--rot); }
+.timeline { position:relative; height:36px; background:#222; border-radius:6px; overflow:hidden; margin:8px 0 4px; cursor:pointer; user-select:none; }
+.seg { position:absolute; top:0; bottom:0; opacity:0.9; }
+.seg.keep { background:var(--keep); }
+.seg.lead_idle, .seg.trail_idle { background:var(--cut); }
+.seg.internal_idle { background:var(--opt); }
+.seg.wrong_rotate { background:var(--rot); }
+.seg.joint_jump { background:var(--jump); min-width:4px; }
+.playhead { position:absolute; top:0; bottom:0; width:2px; background:var(--play); z-index:3; }
+.chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+.chip { border:1px solid #555; border-radius:999px; padding:4px 10px; font-size:12px; cursor:pointer; background:#222; }
+.chip.on { outline:2px solid #fff; }
+.chip.cut { border-color:var(--cut); }
+.chip.opt { border-color:var(--opt); }
+.chip.jump { border-color:var(--jump); }
+.chip.rot { border-color:var(--rot); }
+.time { font-variant-numeric: tabular-nums; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title">裁剪预览</h1>
+  <p id="summary"></p>
+  <p>点时间轴或色块跳到该片段。红=头尾静止；橙=中间停住（臂停且夹爪未开合，≥0.8s）；紫=第一次旋转开头的短反向误转；蓝=关节跳变。短地址：<a href="/trim_slot.html">/trim_slot.html</a></p>
+</header>
+<div class="layout">
+  <aside class="list" id="list"></aside>
+  <section class="main">
+    <div class="row">
+      <button id="prev">上一条</button>
+      <button id="next">下一条</button>
+      <span id="epLabel"></span>
+      <span class="time" id="clock">0.00 / 0.00</span>
+    </div>
+    <div class="videos" id="videos"></div>
+    <div class="legend">
+      <span><i class="sw keep"></i>保留</span>
+      <span><i class="sw cut"></i>将裁（头/尾静止）</span>
+      <span><i class="sw opt"></i>中间停住（臂停且夹爪未在开合）</span>
+      <span><i class="sw jump"></i>突然抽动（静止后猛转，画面会跟着抖）</span>
+      <span><i class="sw rot"></i>第一次旋转的短反向误转（后面长转不标）</span>
+    </div>
+    <div class="timeline" id="timeline"></div>
+    <div class="chips" id="chips"></div>
+    <div class="row">
+      <button class="pri" id="playSeg">播放当前片段</button>
+      <button id="playAll">从头播放整条</button>
+    </div>
+  </section>
+</div>
+<script id="plan" type="application/json">__PLAN_JSON__</script>
+<script>
+const plan = JSON.parse(document.getElementById("plan").textContent);
+const fps = plan.fps || 20;
+const name = (plan.source || "").split("/").filter(Boolean).pop();
+const root = plan.video_url_root || ("/small_tasks/" + name);
+const keys = plan.video_keys || [];
+const chunkSize = plan.chunks_size || 1000;
+let idx = 0;
+let loop = null;
+let videos = [];
+let syncing = false;
+let lastSeek = 0;
+
+document.getElementById("title").textContent = "裁剪预览：" + name;
+const s = plan.summary || {};
+document.getElementById("summary").textContent =
+  `共 ${s.n_episodes||plan.episodes.length} 条 · 原 ${Math.round(s.src_seconds||0)}s · 建议裁 ${Math.round(s.cut_seconds||0)}s · 保留 ${Math.round(s.keep_seconds||0)}s`;
+
+function videoUrl(epIndex, key) {
+  const chunk = String(Math.floor(epIndex / chunkSize)).padStart(3, "0");
+  const ep = String(epIndex).padStart(6, "0");
+  return `${root}/videos/chunk-${chunk}/${key}/episode_${ep}.mp4`;
+}
+
+function segs(ep) {
+  const n = ep.n_frames;
+  const out = [{kind:"keep", start:0, end:n, apply:false, reason:"保留/未标注"}];
+  for (const c of ep.cuts || []) out.push(c);
+  for (const f of ep.flags || []) {
+    const fr = f.frame || 0;
+    out.push({kind:"joint_jump", start:fr, end:Math.min(n, fr+1), apply:false, reason:f.reason, seconds: f.seconds});
+  }
+  return out;
+}
+
+function renderList() {
+  const box = document.getElementById("list");
+  box.innerHTML = plan.episodes.map((ep,i) => {
+    const cuts = (ep.cuts||[]).filter(c => c.apply);
+    return `<div class="item ${i===idx?"on":""}" data-i="${i}">
+      <div class="id">ep ${String(ep.episode_index).padStart(3,"0")}</div>
+      <div class="meta">${ep.duration_s.toFixed(1)}s → ${ep.keep_s.toFixed(1)}s · 裁 ${ep.cut_s.toFixed(1)}s${cuts.length?"":" · 无自动裁"}</div>
+    </div>`;
+  }).join("");
+  box.querySelectorAll(".item").forEach(el => el.onclick = () => load(Number(el.dataset.i)));
+}
+
+function load(i) {
+  idx = Math.max(0, Math.min(plan.episodes.length-1, i));
+  loop = null;
+  const ep = plan.episodes[idx];
+  document.getElementById("epLabel").textContent =
+    `ep ${String(ep.episode_index).padStart(3,"0")}  ${ep.duration_s.toFixed(1)}s`;
+  const vbox = document.getElementById("videos");
+  vbox.innerHTML = keys.map((k,ki) =>
+    `<div><div class="time">${k.replace("observation.images.","")}${ki? " · 跟左侧同步":" · 用此画面控制播放"}</div>
+     <video id="v${ki}" ${ki===0?"controls":"muted"} playsinline preload="auto" src="${videoUrl(ep.episode_index,k)}"></video></div>`
+  ).join("");
+  videos = keys.map((_,ki) => document.getElementById("v"+ki));
+  lastSeek = 0;
+  videos.forEach((v) => {
+    v.preload = "auto";
+    v.addEventListener("loadedmetadata", () => {
+      if (lastSeek > 0.04) {
+        try { v.currentTime = clampTime(v, lastSeek); } catch (e) {}
+      }
+    });
+  });
+  const master = videos[0];
+  if (master) {
+    master.addEventListener("timeupdate", onTime);
+    master.addEventListener("play", () => {
+      if (syncing) return;
+      videos.slice(1).forEach(v => {
+        if (lastSeek > 0.2 && (v.currentTime || 0) < 0.08) {
+          try { v.currentTime = clampTime(v, master.currentTime); } catch (e) {}
+        }
+        v.play().catch(()=>{});
+      });
+    });
+    master.addEventListener("pause", () => {
+      if (syncing) return;
+      videos.slice(1).forEach(v => v.pause());
+    });
+    master.addEventListener("seeked", () => {
+      if (syncing) return;
+      lastSeek = master.currentTime;
+      videos.slice(1).forEach(v => {
+        try { v.currentTime = clampTime(v, lastSeek); } catch (e) {}
+      });
+    });
+  }
+  drawTimeline(ep);
+  drawChips(ep);
+  renderList();
+  const firstCut = (ep.cuts||[]).find(c => c.apply) || (ep.cuts||[])[0] || (ep.flags||[])[0];
+  if (firstCut) {
+    loop = null;
+    seekAll(tOf(firstCut.start));
+  }
+}
+
+function tOf(frame) { return frame / fps; }
+
+function drawTimeline(ep) {
+  const tl = document.getElementById("timeline");
+  const n = ep.n_frames;
+  let html = "";
+  const keep = ep.keep || {start:0,end:n};
+  html += `<div class="seg keep" style="left:${100*keep.start/n}%;width:${100*(keep.end-keep.start)/n}%"></div>`;
+  for (const c of ep.cuts||[]) {
+    html += `<div class="seg ${c.kind}" style="left:${100*c.start/n}%;width:${Math.max(0.4, 100*(c.end-c.start)/n)}%"></div>`;
+  }
+  html += `<div class="playhead" id="playhead" style="left:0"></div>`;
+  tl.innerHTML = html;
+  tl.onclick = (ev) => {
+    const r = tl.getBoundingClientRect();
+    const t = ((ev.clientX - r.left) / r.width) * (n / fps);
+    loop = null;
+    seekAll(t).then(() => playAll());
+  };
+}
+
+function drawChips(ep) {
+  const box = document.getElementById("chips");
+  const chips = [];
+  chips.push({label:`整条 0–${ep.duration_s.toFixed(1)}s`, start:0, end:ep.n_frames, cls:""});
+  chips.push({label:`保留 ${tOf(ep.keep.start).toFixed(1)}–${tOf(ep.keep.end).toFixed(1)}s`, start:ep.keep.start, end:ep.keep.end, cls:""});
+  for (const c of ep.cuts||[]) {
+    if (c.kind==="joint_jump") {
+      chips.push({label:`抽动 ${c.max_deg}° @${((c.frame||c.start)/fps).toFixed(2)}s`, start:c.start, end:c.end, cls:"jump", reason:c.reason});
+      continue;
+    }
+    const tag = c.apply ? "将裁" : "仅标记";
+    const cls = c.kind==="wrong_rotate" ? "rot" : (c.apply?"cut":"opt");
+    chips.push({label:`${c.kind} ${c.seconds}s (${tag})`, start:c.start, end:c.end, cls, reason:c.reason});
+  }
+  box.innerHTML = chips.map((c,i) =>
+    `<div class="chip ${c.cls}" data-i="${i}" title="${c.reason||""}">${c.label}</div>`
+  ).join("");
+  box._chips = chips;
+  box.querySelectorAll(".chip").forEach(el => {
+    el.onclick = () => {
+      box.querySelectorAll(".chip").forEach(x => x.classList.remove("on"));
+      el.classList.add("on");
+      const c = chips[Number(el.dataset.i)];
+      playRange(c.start, c.end, true);
+    };
+  });
+}
+
+function clampTime(v, t) {
+  const d = v.duration;
+  if (Number.isFinite(d) && d > 0.2) return Math.max(0, Math.min(t, d - 0.04));
+  return Math.max(0, t);
+}
+
+function whenReady(v) {
+  return new Promise((resolve) => {
+    const ok = () => v.readyState >= 1 && Number.isFinite(v.duration) && v.duration > 0.2;
+    if (ok()) return resolve();
+    const onMeta = () => { if (ok()) { v.removeEventListener("loadedmetadata", onMeta); v.removeEventListener("durationchange", onMeta); resolve(); } };
+    v.addEventListener("loadedmetadata", onMeta);
+    v.addEventListener("durationchange", onMeta);
+    setTimeout(resolve, 4000);
+  });
+}
+
+function seekOne(v, t) {
+  return new Promise((resolve) => {
+    if (!v) return resolve();
+    const target = clampTime(v, t);
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      v.removeEventListener("seeked", finish);
+      resolve();
+    };
+    v.addEventListener("seeked", finish);
+    try { v.currentTime = target; } catch (e) { finish(); return; }
+    if (Math.abs((v.currentTime || 0) - target) < 0.05 && v.readyState >= 2) finish();
+    setTimeout(finish, 900);
+  });
+}
+
+async function seekAll(t) {
+  if (!videos.length) return;
+  lastSeek = Math.max(0, t);
+  syncing = true;
+  videos.forEach(v => { try { v.pause(); } catch (e) {} });
+  await Promise.all(videos.map(whenReady));
+  for (let pass = 0; pass < 2; pass++) {
+    await Promise.all(videos.map(v => seekOne(v, lastSeek)));
+    const drifted = videos.some(v => lastSeek > 0.25 && Math.abs((v.currentTime || 0) - lastSeek) > 0.4);
+    if (!drifted) break;
+  }
+  syncing = false;
+}
+
+function playAll() {
+  syncing = true;
+  videos.forEach((v, i) => {
+    if (i > 0 && lastSeek > 0.2 && (v.currentTime || 0) < 0.08) {
+      try { v.currentTime = clampTime(v, lastSeek); } catch (e) {}
+    }
+  });
+  const jobs = videos.map(v => v.play().catch(()=>{}));
+  Promise.all(jobs).finally(() => { syncing = false; });
+}
+
+function pauseAll() {
+  syncing = true;
+  videos.forEach(v => v.pause());
+  syncing = false;
+}
+
+async function playRange(start, end, autoplay) {
+  loop = {start: tOf(start), end: tOf(Math.max(start+1, end))};
+  await seekAll(loop.start);
+  if (autoplay !== false) playAll();
+}
+
+function onTime() {
+  if (syncing) return;
+  const v0 = videos[0]; if (!v0) return;
+  const t = v0.currentTime;
+  document.getElementById("clock").textContent = t.toFixed(2) + " / " + (v0.duration||0).toFixed(2);
+  const ep = plan.episodes[idx];
+  const ph = document.getElementById("playhead");
+  if (ph && ep) ph.style.left = (100 * t / (ep.n_frames/fps)) + "%";
+  if (loop && t >= loop.end - 0.05) {
+    syncing = true;
+    videos.forEach(v => { try { v.currentTime = loop.start; } catch (e) {} });
+    setTimeout(() => { syncing = false; playAll(); }, 80);
+  }
+}
+
+document.getElementById("prev").onclick = () => load(idx-1);
+document.getElementById("next").onclick = () => load(idx+1);
+document.getElementById("playSeg").onclick = () => { if (loop) seekAll(loop.start).then(() => playAll()); };
+document.getElementById("playAll").onclick = () => { loop=null; seekAll(0).then(() => playAll()); };
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowLeft") load(idx-1);
+  if (e.key === "ArrowRight") load(idx+1);
+  if (e.key === " ") { e.preventDefault(); const v=videos[0]; if(!v) return; v.paused?playAll():pauseAll(); }
+});
+load(0);
+</script>
+</body>
+</html>

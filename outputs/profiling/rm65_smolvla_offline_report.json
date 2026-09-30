@@ -1,0 +1,242 @@
+{
+  "pass": true,
+  "device": "cuda",
+  "results": {
+    "usb": {
+      "name": "usb",
+      "pass_load": true,
+      "pass_chunk": true,
+      "pass_embed": true,
+      "pass_rtc": true,
+      "config": {
+        "path": "/home/sdznkj/zkx_ws/sendlerobot/usb_smolvla",
+        "type": "smolvla",
+        "input_features": {
+          "observation.state": [
+            6
+          ],
+          "observation.images.camera1": [
+            3,
+            256,
+            256
+          ],
+          "observation.images.camera2": [
+            3,
+            256,
+            256
+          ],
+          "observation.images.camera3": [
+            3,
+            256,
+            256
+          ],
+          "observation.images.empty_camera_0": [
+            3,
+            480,
+            640
+          ]
+        },
+        "output_features": {
+          "action": [
+            7
+          ]
+        },
+        "chunk_size": 50,
+        "n_action_steps": 50,
+        "empty_cameras": 1,
+        "vlm_model_name": "/home/sdznkj/zkx_ws/sendlerobot/base_models/SmolVLM2-500M-Video-Instruct",
+        "schema_notes": {
+          "state_dim": [
+            6
+          ],
+          "action_dim": [
+            7
+          ],
+          "vs_local_cleaned": "cleaned: state/action 7-D + front/(astra|mono); ckpt: state 6-D + camera1/2/3 (+ empty) + action 7. Remap needed for dataset eval."
+        }
+      },
+      "compat_patch": {
+        "dropped_keys": [],
+        "vlm_was": "/home/sdznkj/zkx_ws/sendlerobot/base_models/SmolVLM2-500M-Video-Instruct",
+        "vlm_now": "/home/sdznkj/zkx_ws/sendlerobot/base_models/SmolVLM2-500M-Video-Instruct"
+      },
+      "stats_keys": [
+        "action",
+        "observation.images.camera1",
+        "observation.images.camera2",
+        "observation.state"
+      ],
+      "stats_state_dim": [
+        6
+      ],
+      "stats_action_dim": [
+        7
+      ],
+      "load_s": 8.05,
+      "device": "cuda",
+      "batch_keys": [
+        "observation.images.camera1",
+        "observation.images.camera2",
+        "observation.images.camera3",
+        "observation.state"
+      ],
+      "chunk_shape": [
+        1,
+        50,
+        7
+      ],
+      "chunk_ms_first": 1572.9,
+      "chunk_ms_second": 931.8,
+      "embed_vlm_shape": [
+        1,
+        305,
+        960
+      ],
+      "embed_expert_shape": [
+        1,
+        50,
+        720
+      ],
+      "rtc_chunk_ms": 1082.9,
+      "rtc_shape": [
+        1,
+        50,
+        7
+      ],
+      "rtc_prefix_mae_vs_leftover": 0.0862,
+      "profile_chunk_ms": {
+        "n": 2,
+        "mean": 936.3,
+        "min": 936.1,
+        "max": 936.4
+      },
+      "suggested_rtc": {
+        "inference_delay_steps": 19,
+        "execution_horizon_steps": 21,
+        "note": "from mean chunk_ms / 50ms (20fps)"
+      },
+      "pass": true
+    },
+    "astra": {
+      "name": "astra",
+      "pass_load": true,
+      "pass_chunk": true,
+      "pass_embed": true,
+      "pass_rtc": true,
+      "config": {
+        "path": "/home/sdznkj/zkx_ws/sendlerobot/astra_smolvla",
+        "type": "smolvla",
+        "input_features": {
+          "observation.state": [
+            6
+          ],
+          "observation.images.camera1": [
+            3,
+            256,
+            256
+          ],
+          "observation.images.camera2": [
+            3,
+            256,
+            256
+          ],
+          "observation.images.camera3": [
+            3,
+            256,
+            256
+          ],
+          "observation.images.empty_camera_0": [
+            3,
+            480,
+            640
+          ]
+        },
+        "output_features": {
+          "action": [
+            7
+          ]
+        },
+        "chunk_size": 50,
+        "n_action_steps": 50,
+        "empty_cameras": 1,
+        "vlm_model_name": "/home/sdznkj/zkx_ws/sendlerobot/base_models/SmolVLM2-500M-Video-Instruct",
+        "schema_notes": {
+          "state_dim": [
+            6
+          ],
+          "action_dim": [
+            7
+          ],
+          "vs_local_cleaned": "cleaned: state/action 7-D + front/(astra|mono); ckpt: state 6-D + camera1/2/3 (+ empty) + action 7. Remap needed for dataset eval."
+        }
+      },
+      "compat_patch": {
+        "dropped_keys": [],
+        "vlm_was": "/home/sdznkj/zkx_ws/sendlerobot/base_models/SmolVLM2-500M-Video-Instruct",
+        "vlm_now": "/home/sdznkj/zkx_ws/sendlerobot/base_models/SmolVLM2-500M-Video-Instruct"
+      },
+      "stats_keys": [
+        "action",
+        "observation.images.camera1",
+        "observation.images.camera2",
+        "observation.state"
+      ],
+      "stats_state_dim": [
+        6
+      ],
+      "stats_action_dim": [
+        7
+      ],
+      "load_s": 7.75,
+      "device": "cuda",
+      "batch_keys": [
+        "observation.images.camera1",
+        "observation.images.camera2",
+        "observation.images.camera3",
+        "observation.state"
+      ],
+      "chunk_shape": [
+        1,
+        50,
+        7
+      ],
+      "chunk_ms_first": 975.7,
+      "chunk_ms_second": 954.6,
+      "embed_vlm_shape": [
+        1,
+        305,
+        960
+      ],
+      "embed_expert_shape": [
+        1,
+        50,
+        720
+      ],
+      "rtc_chunk_ms": 1082.0,
+      "rtc_shape": [
+        1,
+        50,
+        7
+      ],
+      "rtc_prefix_mae_vs_leftover": 0.0771,
+      "profile_chunk_ms": {
+        "n": 2,
+        "mean": 939.7,
+        "min": 935.3,
+        "max": 944.2
+      },
+      "suggested_rtc": {
+        "inference_delay_steps": 19,
+        "execution_horizon_steps": 21,
+        "note": "from mean chunk_ms / 50ms (20fps)"
+      },
+      "pass": true
+    }
+  },
+  "cleaned_alignment": {
+    "usb_local": "datasets/cleaned/rm65_usb_insert — state7 + front/mono",
+    "astra_local": "datasets/cleaned/rm65_{stacking,cleanup,place} — state7 + front/astra",
+    "ckpt_common": "state6 + camera1/2/3 (+ empty) + action7",
+    "action_needed": "key remap + state trim/pad before dataset-based eval / Stage1"
+  }
+}

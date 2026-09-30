@@ -1,0 +1,3337 @@
+{
+  "source": "/home/sdznkj/zkx_ws/sendlerobot/datasets/small_tasks/rm65_place_to_slot",
+  "fps": 20.0,
+  "idle_deg": 0.08,
+  "min_cut_s": 0.4,
+  "internal_min_s": 0.8,
+  "gripper_settle_s": 2.0,
+  "jump_deg": 8.0,
+  "video_keys": [
+    "observation.images.front",
+    "observation.images.astra"
+  ],
+  "chunks_size": 1000,
+  "video_url_root": "/small_tasks/rm65_place_to_slot",
+  "summary": {
+    "n_episodes": 52,
+    "src_seconds": 3996.999999999999,
+    "keep_seconds": 3691.9499999999994,
+    "cut_seconds": 305.04999999999995,
+    "applied_cuts": {
+      "lead_idle": 46,
+      "trail_idle": 26,
+      "internal_idle": 209,
+      "wrong_rotate": 17
+    },
+    "skip_wrong_rotate_episodes": [
+      17,
+      29,
+      46
+    ]
+  },
+  "episodes": [
+    {
+      "n_frames": 1705,
+      "keep": {
+        "start": 18,
+        "end": 1705,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 18,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 279,
+          "end": 301,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 613,
+          "end": 630,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 834,
+          "end": 853,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1272,
+          "end": 1290,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2545,
+      "duration_s": 85.25,
+      "keep_s": 80.55,
+      "cut_s": 4.7,
+      "episode_index": 0,
+      "task": null
+    },
+    {
+      "n_frames": 1514,
+      "keep": {
+        "start": 31,
+        "end": 1514,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 31,
+          "seconds": 1.55,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 603,
+          "end": 625,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 828,
+          "end": 847,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1297,
+          "end": 1324,
+          "seconds": 1.35,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1456,
+          "end": 1472,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2655,
+      "duration_s": 75.7,
+      "keep_s": 69.95,
+      "cut_s": 5.75,
+      "episode_index": 1,
+      "task": null
+    },
+    {
+      "n_frames": 1989,
+      "keep": {
+        "start": 22,
+        "end": 1989,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 22,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 89,
+          "end": 117,
+          "seconds": 1.4,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 227,
+          "end": 255,
+          "seconds": 1.4,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 269,
+          "end": 288,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 682,
+          "end": 703,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 972,
+          "end": 988,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1125,
+          "end": 1153,
+          "seconds": 1.4,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1370,
+          "end": 1389,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1890,
+          "end": 1910,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1966,
+          "end": 1984,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 388,
+          "end": 396,
+          "seconds": 0.4,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 -4° / 0.40s，随后连续 +98° / 10.0s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2388,
+      "duration_s": 99.45,
+      "keep_s": 88.1,
+      "cut_s": 11.35,
+      "episode_index": 2,
+      "task": null
+    },
+    {
+      "n_frames": 1622,
+      "keep": {
+        "start": 40,
+        "end": 1622,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 40,
+          "seconds": 2.0,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 167,
+          "end": 189,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 348,
+          "end": 365,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 751,
+          "end": 775,
+          "seconds": 1.2,
+          "apply": true,
+          "reason": "中间停住约 1.2s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 866,
+          "end": 886,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 956,
+          "end": 975,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1103,
+          "end": 1126,
+          "seconds": 1.15,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1537,
+          "end": 1555,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3348,
+      "duration_s": 81.1,
+      "keep_s": 71.95,
+      "cut_s": 9.15,
+      "episode_index": 3,
+      "task": null
+    },
+    {
+      "n_frames": 1612,
+      "keep": {
+        "start": 32,
+        "end": 1612,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 32,
+          "seconds": 1.6,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 312,
+          "end": 334,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 366,
+          "end": 396,
+          "seconds": 1.5,
+          "apply": true,
+          "reason": "中间停住约 1.5s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 673,
+          "end": 694,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 812,
+          "end": 837,
+          "seconds": 1.25,
+          "apply": true,
+          "reason": "中间停住约 1.2s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 529,
+          "end": 535,
+          "seconds": 0.3,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 -3° / 0.30s，随后连续 +30° / 3.0s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2779,
+      "duration_s": 80.6,
+      "keep_s": 73.8,
+      "cut_s": 6.8,
+      "episode_index": 4,
+      "task": null
+    },
+    {
+      "n_frames": 1728,
+      "keep": {
+        "start": 0,
+        "end": 1708,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 1708,
+          "end": 1728,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 5,
+          "end": 22,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 285,
+          "end": 304,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 434,
+          "end": 450,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 534,
+          "end": 551,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 578,
+          "end": 594,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 858,
+          "end": 893,
+          "seconds": 1.75,
+          "apply": true,
+          "reason": "中间停住约 1.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 896,
+          "end": 914,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 713,
+          "end": 720,
+          "seconds": 0.35,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 +3° / 0.35s，随后连续 -26° / 2.6s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2546,
+      "duration_s": 86.4,
+      "keep_s": 78.15,
+      "cut_s": 8.25,
+      "episode_index": 5,
+      "task": null
+    },
+    {
+      "n_frames": 1989,
+      "keep": {
+        "start": 30,
+        "end": 1989,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 30,
+          "seconds": 1.5,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 365,
+          "end": 384,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1244,
+          "end": 1273,
+          "seconds": 1.45,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1371,
+          "end": 1390,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1869,
+          "end": 1915,
+          "seconds": 2.3,
+          "apply": true,
+          "reason": "中间停住约 2.3s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1923,
+          "end": 1955,
+          "seconds": 1.6,
+          "apply": true,
+          "reason": "中间停住约 1.6s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 132,
+          "end": 139,
+          "seconds": 0.35,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 -3° / 0.35s，随后连续 +43° / 4.2s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2172,
+      "duration_s": 99.45,
+      "keep_s": 90.35,
+      "cut_s": 9.1,
+      "episode_index": 6,
+      "task": null
+    },
+    {
+      "n_frames": 1791,
+      "keep": {
+        "start": 20,
+        "end": 1791,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 20,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 317,
+          "end": 337,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 438,
+          "end": 459,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 493,
+          "end": 523,
+          "seconds": 1.5,
+          "apply": true,
+          "reason": "中间停住约 1.5s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 539,
+          "end": 555,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 580,
+          "end": 610,
+          "seconds": 1.5,
+          "apply": true,
+          "reason": "中间停住约 1.5s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 624,
+          "end": 646,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 649,
+          "end": 670,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 927,
+          "end": 945,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1219,
+          "end": 1238,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1718,
+          "end": 1736,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2892,
+      "duration_s": 89.55,
+      "keep_s": 77.8,
+      "cut_s": 11.75,
+      "episode_index": 7,
+      "task": null
+    },
+    {
+      "n_frames": 1989,
+      "keep": {
+        "start": 27,
+        "end": 1976,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 27,
+          "seconds": 1.35,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1976,
+          "end": 1989,
+          "seconds": 0.65,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 84,
+          "end": 102,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 600,
+          "end": 626,
+          "seconds": 1.3,
+          "apply": true,
+          "reason": "中间停住约 1.3s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 991,
+          "end": 1008,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1828,
+          "end": 1853,
+          "seconds": 1.25,
+          "apply": true,
+          "reason": "中间停住约 1.2s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1912,
+          "end": 1931,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 101,
+          "end": 108,
+          "seconds": 0.35,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 -3° / 0.35s，随后连续 +50° / 4.9s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2469,
+      "duration_s": 99.45,
+      "keep_s": 91.9,
+      "cut_s": 7.55,
+      "episode_index": 8,
+      "task": null
+    },
+    {
+      "n_frames": 1679,
+      "keep": {
+        "start": 31,
+        "end": 1679,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 31,
+          "seconds": 1.55,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 271,
+          "end": 290,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 632,
+          "end": 651,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1025,
+          "end": 1046,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2341,
+      "duration_s": 83.95,
+      "keep_s": 79.45,
+      "cut_s": 4.5,
+      "episode_index": 9,
+      "task": null
+    },
+    {
+      "n_frames": 1974,
+      "keep": {
+        "start": 27,
+        "end": 1959,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 27,
+          "seconds": 1.35,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1959,
+          "end": 1974,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 391,
+          "end": 408,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 622,
+          "end": 638,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 654,
+          "end": 672,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 685,
+          "end": 705,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 745,
+          "end": 770,
+          "seconds": 1.25,
+          "apply": true,
+          "reason": "中间停住约 1.2s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 772,
+          "end": 801,
+          "seconds": 1.45,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 803,
+          "end": 822,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1203,
+          "end": 1219,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1392,
+          "end": 1421,
+          "seconds": 1.45,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1658,
+          "end": 1690,
+          "seconds": 1.6,
+          "apply": true,
+          "reason": "中间停住约 1.6s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1811,
+          "end": 1836,
+          "seconds": 1.25,
+          "apply": true,
+          "reason": "中间停住约 1.2s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1840,
+          "end": 1866,
+          "seconds": 1.3,
+          "apply": true,
+          "reason": "中间停住约 1.3s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1869,
+          "end": 1891,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3176,
+      "duration_s": 98.7,
+      "keep_s": 81.9,
+      "cut_s": 16.8,
+      "episode_index": 10,
+      "task": null
+    },
+    {
+      "n_frames": 1986,
+      "keep": {
+        "start": 40,
+        "end": 1986,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 40,
+          "seconds": 2.0,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 67,
+          "end": 113,
+          "seconds": 2.3,
+          "apply": true,
+          "reason": "中间停住约 2.3s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 204,
+          "end": 223,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 362,
+          "end": 379,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 410,
+          "end": 436,
+          "seconds": 1.3,
+          "apply": true,
+          "reason": "中间停住约 1.3s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 580,
+          "end": 596,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 814,
+          "end": 830,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1226,
+          "end": 1260,
+          "seconds": 1.7,
+          "apply": true,
+          "reason": "中间停住约 1.7s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1455,
+          "end": 1473,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1486,
+          "end": 1504,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1740,
+          "end": 1757,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1886,
+          "end": 1913,
+          "seconds": 1.35,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1919,
+          "end": 1944,
+          "seconds": 1.25,
+          "apply": true,
+          "reason": "中间停住约 1.2s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1951,
+          "end": 1985,
+          "seconds": 1.7,
+          "apply": true,
+          "reason": "中间停住约 1.7s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 702,
+          "end": 707,
+          "seconds": 0.25,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 -2° / 0.25s，随后连续 +36° / 3.5s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3797,
+      "duration_s": 99.3,
+      "keep_s": 81.4,
+      "cut_s": 17.9,
+      "episode_index": 11,
+      "task": null
+    },
+    {
+      "n_frames": 1913,
+      "keep": {
+        "start": 33,
+        "end": 1888,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 33,
+          "seconds": 1.65,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1888,
+          "end": 1913,
+          "seconds": 1.25,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 444,
+          "end": 460,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 673,
+          "end": 690,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 791,
+          "end": 813,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1122,
+          "end": 1141,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1211,
+          "end": 1234,
+          "seconds": 1.15,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1335,
+          "end": 1354,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1477,
+          "end": 1500,
+          "seconds": 1.15,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1517,
+          "end": 1533,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 97,
+          "end": 105,
+          "seconds": 0.4,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 -4° / 0.40s，随后连续 +53° / 5.2s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2687,
+      "duration_s": 95.65,
+      "keep_s": 84.6,
+      "cut_s": 11.05,
+      "episode_index": 12,
+      "task": null
+    },
+    {
+      "n_frames": 1617,
+      "keep": {
+        "start": 24,
+        "end": 1601,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 24,
+          "seconds": 1.2,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1601,
+          "end": 1617,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 489,
+          "end": 510,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1195,
+          "end": 1218,
+          "seconds": 1.15,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1499,
+          "end": 1515,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2622,
+      "duration_s": 80.85,
+      "keep_s": 75.85,
+      "cut_s": 5.0,
+      "episode_index": 13,
+      "task": null
+    },
+    {
+      "n_frames": 1940,
+      "keep": {
+        "start": 25,
+        "end": 1940,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 25,
+          "seconds": 1.25,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 53,
+          "end": 71,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 230,
+          "end": 257,
+          "seconds": 1.35,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 502,
+          "end": 519,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 522,
+          "end": 548,
+          "seconds": 1.3,
+          "apply": true,
+          "reason": "中间停住约 1.3s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 553,
+          "end": 579,
+          "seconds": 1.3,
+          "apply": true,
+          "reason": "中间停住约 1.3s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 950,
+          "end": 970,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1317,
+          "end": 1333,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1341,
+          "end": 1370,
+          "seconds": 1.45,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1520,
+          "end": 1546,
+          "seconds": 1.3,
+          "apply": true,
+          "reason": "中间停住约 1.3s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1563,
+          "end": 1580,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1652,
+          "end": 1670,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1841,
+          "end": 1872,
+          "seconds": 1.55,
+          "apply": true,
+          "reason": "中间停住约 1.6s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1899,
+          "end": 1916,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 70,
+          "end": 75,
+          "seconds": 0.25,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 -2° / 0.25s，随后连续 +56° / 5.4s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2969,
+      "duration_s": 97.0,
+      "keep_s": 81.15,
+      "cut_s": 15.85,
+      "episode_index": 14,
+      "task": null
+    },
+    {
+      "n_frames": 1774,
+      "keep": {
+        "start": 29,
+        "end": 1750,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 29,
+          "seconds": 1.45,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1750,
+          "end": 1774,
+          "seconds": 1.2,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 39,
+          "end": 66,
+          "seconds": 1.35,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1023,
+          "end": 1039,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1639,
+          "end": 1658,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2311,
+      "duration_s": 88.7,
+      "keep_s": 82.95,
+      "cut_s": 5.75,
+      "episode_index": 15,
+      "task": null
+    },
+    {
+      "n_frames": 1727,
+      "keep": {
+        "start": 22,
+        "end": 1727,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 22,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 280,
+          "end": 298,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 550,
+          "end": 567,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 737,
+          "end": 755,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 778,
+          "end": 796,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 837,
+          "end": 855,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 874,
+          "end": 896,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1632,
+          "end": 1654,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1660,
+          "end": 1676,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2884,
+      "duration_s": 86.35,
+      "keep_s": 77.8,
+      "cut_s": 8.55,
+      "episode_index": 16,
+      "task": null
+    },
+    {
+      "n_frames": 1546,
+      "keep": {
+        "start": 26,
+        "end": 1514,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 26,
+          "seconds": 1.3,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1514,
+          "end": 1546,
+          "seconds": 1.6,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 508,
+          "end": 527,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 764,
+          "end": 800,
+          "seconds": 1.8,
+          "apply": true,
+          "reason": "中间停住约 1.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 802,
+          "end": 826,
+          "seconds": 1.2,
+          "apply": true,
+          "reason": "中间停住约 1.2s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 829,
+          "end": 849,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 885,
+          "end": 908,
+          "seconds": 1.15,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1450,
+          "end": 1467,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 148,
+          "end": 166,
+          "seconds": 0.9,
+          "apply": false,
+          "reason": "第一次旋转开头短反向 -4° / 0.90s，随后连续 +21° / 2.7s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3111,
+      "duration_s": 77.3,
+      "keep_s": 67.45,
+      "cut_s": 9.85,
+      "episode_index": 17,
+      "task": null
+    },
+    {
+      "n_frames": 1561,
+      "keep": {
+        "start": 28,
+        "end": 1533,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 28,
+          "seconds": 1.4,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1533,
+          "end": 1561,
+          "seconds": 1.4,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 135,
+          "end": 153,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 579,
+          "end": 604,
+          "seconds": 1.25,
+          "apply": true,
+          "reason": "中间停住约 1.2s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1180,
+          "end": 1199,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2249,
+      "duration_s": 78.05,
+      "keep_s": 72.15,
+      "cut_s": 5.9,
+      "episode_index": 18,
+      "task": null
+    },
+    {
+      "n_frames": 1714,
+      "keep": {
+        "start": 16,
+        "end": 1682,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 16,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1682,
+          "end": 1714,
+          "seconds": 1.6,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 579,
+          "end": 601,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 843,
+          "end": 860,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 864,
+          "end": 882,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1031,
+          "end": 1051,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1117,
+          "end": 1135,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2818,
+      "duration_s": 85.7,
+      "keep_s": 78.55,
+      "cut_s": 7.15,
+      "episode_index": 19,
+      "task": null
+    },
+    {
+      "n_frames": 1621,
+      "keep": {
+        "start": 0,
+        "end": 1610,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 1610,
+          "end": 1621,
+          "seconds": 0.55,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 5,
+          "end": 21,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 61,
+          "end": 92,
+          "seconds": 1.55,
+          "apply": true,
+          "reason": "中间停住约 1.6s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 982,
+          "end": 1020,
+          "seconds": 1.9,
+          "apply": true,
+          "reason": "中间停住约 1.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1026,
+          "end": 1043,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1375,
+          "end": 1392,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3072,
+      "duration_s": 81.05,
+      "keep_s": 74.55,
+      "cut_s": 6.5,
+      "episode_index": 20,
+      "task": null
+    },
+    {
+      "n_frames": 1662,
+      "keep": {
+        "start": 15,
+        "end": 1645,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 15,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1645,
+          "end": 1662,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 249,
+          "end": 270,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 338,
+          "end": 371,
+          "seconds": 1.65,
+          "apply": true,
+          "reason": "中间停住约 1.6s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 578,
+          "end": 597,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 795,
+          "end": 819,
+          "seconds": 1.2,
+          "apply": true,
+          "reason": "中间停住约 1.2s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 910,
+          "end": 930,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 1070,
+          "end": 1077,
+          "seconds": 0.35,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 +3° / 0.35s，随后连续 -37° / 3.6s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.3045,
+      "duration_s": 83.1,
+      "keep_s": 75.3,
+      "cut_s": 7.8,
+      "episode_index": 21,
+      "task": null
+    },
+    {
+      "n_frames": 1610,
+      "keep": {
+        "start": 16,
+        "end": 1590,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 16,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1590,
+          "end": 1610,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1190,
+          "end": 1212,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1437,
+          "end": 1458,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 265,
+          "end": 295,
+          "seconds": 1.5,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 -8° / 1.50s，随后连续 +63° / 6.2s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.1689,
+      "duration_s": 80.5,
+      "keep_s": 75.05,
+      "cut_s": 5.45,
+      "episode_index": 22,
+      "task": null
+    },
+    {
+      "n_frames": 1423,
+      "keep": {
+        "start": 26,
+        "end": 1412,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 26,
+          "seconds": 1.3,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1412,
+          "end": 1423,
+          "seconds": 0.55,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 202,
+          "end": 218,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 510,
+          "end": 527,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2495,
+      "duration_s": 71.15,
+      "keep_s": 67.65,
+      "cut_s": 3.5,
+      "episode_index": 23,
+      "task": null
+    },
+    {
+      "n_frames": 1487,
+      "keep": {
+        "start": 11,
+        "end": 1478,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 11,
+          "seconds": 0.55,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1478,
+          "end": 1487,
+          "seconds": 0.45,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 208,
+          "end": 225,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.1984,
+      "duration_s": 74.35,
+      "keep_s": 72.5,
+      "cut_s": 1.85,
+      "episode_index": 24,
+      "task": null
+    },
+    {
+      "n_frames": 1837,
+      "keep": {
+        "start": 16,
+        "end": 1822,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 16,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1822,
+          "end": 1837,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 135,
+          "end": 151,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 978,
+          "end": 996,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1014,
+          "end": 1030,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1324,
+          "end": 1342,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1346,
+          "end": 1365,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2373,
+      "duration_s": 91.85,
+      "keep_s": 85.95,
+      "cut_s": 5.9,
+      "episode_index": 25,
+      "task": null
+    },
+    {
+      "n_frames": 1669,
+      "keep": {
+        "start": 18,
+        "end": 1669,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 18,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 76,
+          "end": 105,
+          "seconds": 1.45,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 469,
+          "end": 487,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 653,
+          "end": 669,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 680,
+          "end": 702,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 864,
+          "end": 883,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1376,
+          "end": 1395,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1563,
+          "end": 1580,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1583,
+          "end": 1599,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2672,
+      "duration_s": 83.45,
+      "keep_s": 74.75,
+      "cut_s": 8.7,
+      "episode_index": 26,
+      "task": null
+    },
+    {
+      "n_frames": 1536,
+      "keep": {
+        "start": 20,
+        "end": 1522,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 20,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1522,
+          "end": 1536,
+          "seconds": 0.7,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 312,
+          "end": 333,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 745,
+          "end": 764,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1413,
+          "end": 1436,
+          "seconds": 1.15,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.1999,
+      "duration_s": 76.8,
+      "keep_s": 71.95,
+      "cut_s": 4.85,
+      "episode_index": 27,
+      "task": null
+    },
+    {
+      "n_frames": 339,
+      "keep": {
+        "start": 0,
+        "end": 324,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "trail_idle",
+          "start": 324,
+          "end": 339,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2183,
+      "duration_s": 16.95,
+      "keep_s": 16.2,
+      "cut_s": 0.75,
+      "episode_index": 28,
+      "task": null
+    },
+    {
+      "n_frames": 1208,
+      "keep": {
+        "start": 16,
+        "end": 1192,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 16,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1192,
+          "end": 1208,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 461,
+          "end": 480,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1121,
+          "end": 1139,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 709,
+          "end": 720,
+          "seconds": 0.55,
+          "apply": false,
+          "reason": "第一次旋转开头短反向 -2° / 0.55s，随后连续 +38° / 6.0s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2243,
+      "duration_s": 60.4,
+      "keep_s": 56.95,
+      "cut_s": 3.45,
+      "episode_index": 29,
+      "task": null
+    },
+    {
+      "n_frames": 1032,
+      "keep": {
+        "start": 16,
+        "end": 1032,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 16,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 639,
+          "end": 658,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 662,
+          "end": 681,
+          "seconds": 0.95,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 961,
+          "end": 979,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.1928,
+      "duration_s": 51.6,
+      "keep_s": 48.0,
+      "cut_s": 3.6,
+      "episode_index": 30,
+      "task": null
+    },
+    {
+      "n_frames": 1292,
+      "keep": {
+        "start": 0,
+        "end": 1292,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "internal_idle",
+          "start": 8,
+          "end": 24,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 682,
+          "end": 699,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1218,
+          "end": 1234,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 72,
+          "end": 79,
+          "seconds": 0.35,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 +3° / 0.35s，随后连续 -39° / 3.9s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.1935,
+      "duration_s": 64.6,
+      "keep_s": 61.8,
+      "cut_s": 2.8,
+      "episode_index": 31,
+      "task": null
+    },
+    {
+      "n_frames": 1380,
+      "keep": {
+        "start": 18,
+        "end": 1357,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 18,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1357,
+          "end": 1380,
+          "seconds": 1.15,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 831,
+          "end": 847,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 850,
+          "end": 877,
+          "seconds": 1.35,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 880,
+          "end": 919,
+          "seconds": 1.95,
+          "apply": true,
+          "reason": "中间停住约 1.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1083,
+          "end": 1101,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2493,
+      "duration_s": 69.0,
+      "keep_s": 61.95,
+      "cut_s": 7.05,
+      "episode_index": 32,
+      "task": null
+    },
+    {
+      "n_frames": 1434,
+      "keep": {
+        "start": 13,
+        "end": 1423,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 13,
+          "seconds": 0.65,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1423,
+          "end": 1434,
+          "seconds": 0.55,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 122,
+          "end": 143,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 939,
+          "end": 957,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 444,
+          "end": 453,
+          "seconds": 0.45,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 +5° / 0.45s，随后连续 -48° / 5.3s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2615,
+      "duration_s": 71.7,
+      "keep_s": 68.1,
+      "cut_s": 3.6,
+      "episode_index": 33,
+      "task": null
+    },
+    {
+      "n_frames": 1723,
+      "keep": {
+        "start": 13,
+        "end": 1715,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 13,
+          "seconds": 0.65,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1715,
+          "end": 1723,
+          "seconds": 0.4,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 406,
+          "end": 426,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 981,
+          "end": 999,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1561,
+          "end": 1577,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2368,
+      "duration_s": 86.15,
+      "keep_s": 82.4,
+      "cut_s": 3.75,
+      "episode_index": 34,
+      "task": null
+    },
+    {
+      "n_frames": 1179,
+      "keep": {
+        "start": 16,
+        "end": 1168,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 16,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1168,
+          "end": 1179,
+          "seconds": 0.55,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 395,
+          "end": 411,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1028,
+          "end": 1044,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2807,
+      "duration_s": 58.95,
+      "keep_s": 56.0,
+      "cut_s": 2.95,
+      "episode_index": 35,
+      "task": null
+    },
+    {
+      "n_frames": 1354,
+      "keep": {
+        "start": 24,
+        "end": 1354,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 24,
+          "seconds": 1.2,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 42,
+          "end": 59,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 23,
+          "end": 40,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 +6° / 0.85s，随后连续 -57° / 5.6s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.243,
+      "duration_s": 67.7,
+      "keep_s": 64.85,
+      "cut_s": 2.85,
+      "episode_index": 36,
+      "task": null
+    },
+    {
+      "n_frames": 1451,
+      "keep": {
+        "start": 13,
+        "end": 1451,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 13,
+          "seconds": 0.65,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 42,
+          "end": 63,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 400,
+          "end": 432,
+          "seconds": 1.6,
+          "apply": true,
+          "reason": "中间停住约 1.6s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 593,
+          "end": 613,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2033,
+      "duration_s": 72.55,
+      "keep_s": 68.25,
+      "cut_s": 4.3,
+      "episode_index": 37,
+      "task": null
+    },
+    {
+      "n_frames": 1801,
+      "keep": {
+        "start": 16,
+        "end": 1750,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 16,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1750,
+          "end": 1801,
+          "seconds": 2.55,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1654,
+          "end": 1670,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 16,
+          "end": 45,
+          "seconds": 1.45,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 +10° / 1.45s，随后连续 -90° / 8.7s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.1632,
+      "duration_s": 90.05,
+      "keep_s": 84.45,
+      "cut_s": 5.6,
+      "episode_index": 38,
+      "task": null
+    },
+    {
+      "n_frames": 1297,
+      "keep": {
+        "start": 25,
+        "end": 1297,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 25,
+          "seconds": 1.25,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 519,
+          "end": 535,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 537,
+          "end": 553,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 84,
+          "end": 91,
+          "seconds": 0.35,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 -3° / 0.35s，随后连续 +46° / 4.5s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2575,
+      "duration_s": 64.85,
+      "keep_s": 61.65,
+      "cut_s": 3.2,
+      "episode_index": 39,
+      "task": null
+    },
+    {
+      "n_frames": 1432,
+      "keep": {
+        "start": 0,
+        "end": 1432,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "internal_idle",
+          "start": 328,
+          "end": 348,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 926,
+          "end": 944,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1255,
+          "end": 1275,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2346,
+      "duration_s": 71.6,
+      "keep_s": 68.7,
+      "cut_s": 2.9,
+      "episode_index": 40,
+      "task": null
+    },
+    {
+      "n_frames": 1226,
+      "keep": {
+        "start": 23,
+        "end": 1226,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 23,
+          "seconds": 1.15,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2284,
+      "duration_s": 61.3,
+      "keep_s": 60.15,
+      "cut_s": 1.15,
+      "episode_index": 41,
+      "task": null
+    },
+    {
+      "n_frames": 1129,
+      "keep": {
+        "start": 28,
+        "end": 1129,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 28,
+          "seconds": 1.4,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 269,
+          "end": 285,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 824,
+          "end": 844,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2365,
+      "duration_s": 56.45,
+      "keep_s": 53.25,
+      "cut_s": 3.2,
+      "episode_index": 42,
+      "task": null
+    },
+    {
+      "n_frames": 1407,
+      "keep": {
+        "start": 28,
+        "end": 1407,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 28,
+          "seconds": 1.4,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 411,
+          "end": 427,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 960,
+          "end": 985,
+          "seconds": 1.25,
+          "apply": true,
+          "reason": "中间停住约 1.2s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 27,
+          "end": 55,
+          "seconds": 1.4,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 +8° / 1.40s，随后连续 -59° / 5.8s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2637,
+      "duration_s": 70.35,
+      "keep_s": 65.55,
+      "cut_s": 4.8,
+      "episode_index": 43,
+      "task": null
+    },
+    {
+      "n_frames": 1504,
+      "keep": {
+        "start": 17,
+        "end": 1494,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 17,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1494,
+          "end": 1504,
+          "seconds": 0.5,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2221,
+      "duration_s": 75.2,
+      "keep_s": 73.85,
+      "cut_s": 1.35,
+      "episode_index": 44,
+      "task": null
+    },
+    {
+      "n_frames": 1533,
+      "keep": {
+        "start": 17,
+        "end": 1533,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 17,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 776,
+          "end": 793,
+          "seconds": 0.85,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 819,
+          "end": 840,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1120,
+          "end": 1136,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.1983,
+      "duration_s": 76.65,
+      "keep_s": 73.1,
+      "cut_s": 3.55,
+      "episode_index": 45,
+      "task": null
+    },
+    {
+      "n_frames": 1195,
+      "keep": {
+        "start": 0,
+        "end": 1195,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "internal_idle",
+          "start": 5,
+          "end": 23,
+          "seconds": 0.9,
+          "apply": true,
+          "reason": "中间停住约 0.9s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 195,
+          "end": 216,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 1092,
+          "end": 1114,
+          "seconds": 1.1,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 685,
+          "end": 714,
+          "seconds": 1.45,
+          "apply": false,
+          "reason": "第一次旋转开头短反向 -6° / 1.45s，随后连续 +51° / 5.5s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2435,
+      "duration_s": 59.75,
+      "keep_s": 56.7,
+      "cut_s": 3.05,
+      "episode_index": 46,
+      "task": null
+    },
+    {
+      "n_frames": 1469,
+      "keep": {
+        "start": 24,
+        "end": 1469,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 24,
+          "seconds": 1.2,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2165,
+      "duration_s": 73.45,
+      "keep_s": 72.25,
+      "cut_s": 1.2,
+      "episode_index": 47,
+      "task": null
+    },
+    {
+      "n_frames": 1021,
+      "keep": {
+        "start": 15,
+        "end": 1010,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 15,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1010,
+          "end": 1021,
+          "seconds": 0.55,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 931,
+          "end": 960,
+          "seconds": 1.45,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.1998,
+      "duration_s": 51.05,
+      "keep_s": 48.3,
+      "cut_s": 2.75,
+      "episode_index": 48,
+      "task": null
+    },
+    {
+      "n_frames": 1630,
+      "keep": {
+        "start": 21,
+        "end": 1620,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 21,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "trail_idle",
+          "start": 1620,
+          "end": 1630,
+          "seconds": 0.5,
+          "apply": true,
+          "reason": "结尾静止/操作已结束"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 718,
+          "end": 752,
+          "seconds": 1.7,
+          "apply": true,
+          "reason": "中间停住约 1.7s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 785,
+          "end": 812,
+          "seconds": 1.35,
+          "apply": true,
+          "reason": "中间停住约 1.4s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 814,
+          "end": 830,
+          "seconds": 0.8,
+          "apply": true,
+          "reason": "中间停住约 0.8s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        },
+        {
+          "kind": "wrong_rotate",
+          "start": 21,
+          "end": 41,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "第一次旋转开头短反向 -11° / 1.00s，随后连续 +54° / 5.8s。只标这短反向。"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2718,
+      "duration_s": 81.5,
+      "keep_s": 75.1,
+      "cut_s": 6.4,
+      "episode_index": 49,
+      "task": null
+    },
+    {
+      "n_frames": 1333,
+      "keep": {
+        "start": 15,
+        "end": 1333,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 15,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 873,
+          "end": 893,
+          "seconds": 1.0,
+          "apply": true,
+          "reason": "中间停住约 1.0s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.2288,
+      "duration_s": 66.65,
+      "keep_s": 64.9,
+      "cut_s": 1.75,
+      "episode_index": 50,
+      "task": null
+    },
+    {
+      "n_frames": 1356,
+      "keep": {
+        "start": 15,
+        "end": 1356,
+        "apply": true
+      },
+      "cuts": [
+        {
+          "kind": "lead_idle",
+          "start": 0,
+          "end": 15,
+          "seconds": 0.75,
+          "apply": true,
+          "reason": "开头静止/未开始操作"
+        },
+        {
+          "kind": "internal_idle",
+          "start": 151,
+          "end": 172,
+          "seconds": 1.05,
+          "apply": true,
+          "reason": "中间停住约 1.1s（臂停且夹爪未动作；夹取闭合过程已排除。默认不裁）"
+        }
+      ],
+      "flags": [],
+      "idle_fraction": 0.1718,
+      "duration_s": 67.8,
+      "keep_s": 66.0,
+      "cut_s": 1.8,
+      "episode_index": 51,
+      "task": null
+    }
+  ],
+  "skip_wrong_rotate_episodes": [
+    17,
+    29,
+    46
+  ],
+  "apply_kinds": [
+    "lead_idle",
+    "trail_idle",
+    "internal_idle",
+    "wrong_rotate"
+  ]
+}

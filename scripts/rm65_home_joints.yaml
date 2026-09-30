@@ -1,0 +1,15 @@
+# RM65 自定义回零位姿（关节角，度）
+#
+# 重要：必须与录制/遥操就绪位一致（rm65_ready_pose.json）。
+# 此前曾误设为「完全伸直」[≈1°, 90°, 0°, …]，从工作区 movej 过去会扫桌面碰撞。
+#
+# 更新步骤：
+#   1. 示教到录制起始位
+#   2. ./scripts/rm65_save_ready_pose.sh
+#   3. 将同一组角度同步到下方 home_joints_deg（或直接用 rm65_ready.py）
+#
+# use_custom_home=false 时改用控制器 rm_get_init_pose（肘部弯曲，但仍可能与录制就绪位不同）
+
+use_custom_home: true
+# 与 scripts/rm65_ready_pose.json 同步（2026-09-08 录制就绪位）
+home_joints_deg: [-161.691, -80.045, 37.359, 156.435, -127.945, -12.731]

@@ -1,0 +1,7 @@
+# Stable names for Orbbec cameras on this Jetson.
+# Old Astra Pro RGB (USB 1-2.3.1, currently /dev/video2) → /dev/video_astra
+# New Astra Pro RGB (USB 1-2.2.1, currently /dev/video4) → /dev/video_astra2
+# DaBai RGB stays /dev/video0.
+
+SUBSYSTEM=="video4linux", KERNELS=="1-2.3.1", ATTR{index}=="0", SYMLINK+="video_astra", MODE="0666", GROUP="video"
+SUBSYSTEM=="video4linux", KERNELS=="1-2.2.1", ATTR{index}=="0", SYMLINK+="video_astra2", MODE="0666", GROUP="video"
